@@ -3,4 +3,22 @@
 @tailwind utilities;
 
 @layer utilities {
+  .btn {
+    @apply bg-orange rounded-full px-5 py-2 text-white;
+  }
+  .btn.alt {
+    @apply bg-white rounded-full px-5 py-2 text-orange;
+  }
+  .btn.full {
+    @apply max-w-max !important;
+  }
+  h2 {
+    @apply text-[#272838] font-serif text-3xl;
+  }
+  .rbox {
+    @apply rounded-lg h-64 bg-gray-500 font-serif relative;
+  }
+  .rbox p {
+    @apply absolute bottom-3 left-3;
+  }
 }

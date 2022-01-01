@@ -1,4 +1,4 @@
-const site_name = 'Next, Tailwind Boilerplate'
+const site_name = 'Pet world park'
 
 export default {
   title: site_name,
@@ -7,7 +7,7 @@ export default {
   openGraph: {
     type: 'website',
     locale: 'en_IE',
-    url: 'https://lightrains.com/',
+    url: 'https://globalpetworld.com/',
     site_name: site_name
   }
 }
