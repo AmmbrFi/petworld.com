@@ -6,7 +6,7 @@ const Feature = props => {
     <section>
       <div className="container">
         <h2>Feature Pet world projects</h2>
-        <img src="/map.svg" alt="" className="mx-auto mt-10" />
+        <img src="/map.png" alt="" className="mx-auto mt-10" />
       </div>
     </section>
   )

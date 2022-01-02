@@ -14,7 +14,7 @@ const Footer = props => {
   return (
     <footer
       style={{ backgroundImage: 'url(/footer-bg.png)' }}
-      className="bg-contain bg-bottom bg-no-repeat py-32">
+      className="bg-contain bg-bottom bg-no-repeat pb-32">
       <div className="container rounded-none md:rounded-lg border border-gray-300 text-gray-500 h-[360px] bg-white">
         <div className="flex flex-row justify-between items-center p-4 md:p-10">
           <img src="/logo-orange.svg" alt="logo" className="w-48" />
