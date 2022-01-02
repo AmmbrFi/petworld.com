@@ -15,11 +15,11 @@ const Footer = props => {
     <footer
       style={{ backgroundImage: 'url(/footer-bg.png)' }}
       className="bg-contain bg-bottom bg-no-repeat pb-32">
-      <div className="container rounded-none md:rounded-lg border border-gray-300 text-gray-500 h-[240px] md:h-[360px] bg-white">
+      <div className="container rounded-none md:rounded-lg border border-gray-200 text-gray-500 h-[240px] md:h-[360px] bg-white">
         <div className="flex flex-row justify-between items-center p-4 md:p-10">
           <Link href="/">
             <a className="cursor-pointer">
-              <img src="/logo-orange.svg" alt="logo" className="w-48" />
+              <img src="/logo-orange.svg" alt="logo" height="43" width="192" />
             </a>
           </Link>
           <div className="hidden md:block flex flex-row items-center space-x-4 md:space-x-8">
@@ -46,7 +46,7 @@ const Footer = props => {
         <div className="border-t border-gray-200 my-4" />
 
         <div className="flex flex-row justify-between items-center p-4 md:p-10">
-          <div className="flex flex-col md:flex-row items-start md:items-center space-x-0 md:space-x-12">
+          <div className="flex flex-col md:flex-row items-start md:items-center space-x-0 md:space-x-6">
             <p className="text-gray-300">Copyright Pet World 2021</p>
             <Link href="/">
               <a className="cursor-pointer text-gray-500">Privacy Policy</a>
