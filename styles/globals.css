@@ -21,4 +21,11 @@
   .rbox p {
     @apply absolute bottom-3 left-3;
   }
+  .rbox.patrn {
+    background-image: url(/pattern.svg);
+    @apply bg-cover bg-no-repeat bg-center;
+  }
+  section {
+    @apply my-24;
+  }
 }
