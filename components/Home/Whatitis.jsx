@@ -18,7 +18,7 @@ const Whatitis = props => {
         alt=""
         className="absolute bottom-10 right-[200px]"
       />
-      <div className="flex flex-col items-center justify-center w-2/5 mx-auto h-full">
+      <div className="flex flex-col items-center justify-center w-full md:w-2/5 mx-auto h-full">
         <div className="text-orange flex flex-row">
           <img src="/pin.svg" alt="" className="mr-1" />
           Hong kong

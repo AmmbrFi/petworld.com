@@ -3,7 +3,7 @@ import React from 'react'
 const SectionTwo = props => {
   return (
     <section className="container text-gray-500">
-      <div className="grid grid-cols-2 gap-6 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
         <img src="Group291.png" alt="" />
 
         <div className="w-9/12">
