@@ -20,6 +20,9 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@400;700&display=swap"
             rel="stylesheet"
           />
+          <link rel="preload" as="image" href="/c-bg.png" />
+          <link rel="preload" as="image" href="/footer-bg.png" />
+          <link rel="preload" as="image" href="/mast-1.svg" />
         </Head>
         <body>
           <Main />

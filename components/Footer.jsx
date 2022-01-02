@@ -14,11 +14,15 @@ const Footer = props => {
   return (
     <footer
       style={{ backgroundImage: 'url(/footer-bg.png)' }}
-      className="bg-contain bg-bottom bg-no-repeat py-32">
-      <div className="container rounded-none md:rounded-lg border border-gray-300 text-gray-500 h-[360px] bg-white">
+      className="bg-contain bg-bottom bg-no-repeat pb-32">
+      <div className="container rounded-none md:rounded-lg border border-gray-300 text-gray-500 h-[240px] md:h-[360px] bg-white">
         <div className="flex flex-row justify-between items-center p-4 md:p-10">
-          <img src="/logo-orange.svg" alt="logo" className="w-48" />
-          <div className="hidden md:block flex flex-row items-center space-x-4 md:space-x-12">
+          <Link href="/">
+            <a className="cursor-pointer">
+              <img src="/logo-orange.svg" alt="logo" className="w-48" />
+            </a>
+          </Link>
+          <div className="hidden md:block flex flex-row items-center space-x-4 md:space-x-8">
             {menu.map((item, index) => {
               return (
                 <Link key={index} href={item.path}>
@@ -35,7 +39,7 @@ const Footer = props => {
             })}
           </div>
         </div>
-        <div className="flex flex-row justify-between items-center px-4 md:px-10 text-orange mt-6">
+        <div className="hidden md:flex flex-row justify-between items-center px-4 md:px-10 text-orange mt-6">
           <p>Hong Kong, street 123</p>
           <p>office@petworld.com</p>
         </div>
