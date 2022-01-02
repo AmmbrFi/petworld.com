@@ -16,7 +16,7 @@ export default function Home() {
       <NextSeo title="Home" />
       <main>
         <div
-          className="bg-cover bg-center h-[687px]"
+          className="bg-cover bg-center h-[687px] bg-gray-600"
           style={{ backgroundImage: 'url(/mast-1.svg)' }}>
           <Menu />
           <Masthead />
