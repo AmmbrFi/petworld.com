@@ -71,8 +71,8 @@ const Menu = props => {
                       <a
                         className={`text-gray-200 block px-4 py-3 text-2xl cursor-pointer ${
                           router.pathname === item.path
-                            ? 'text-orange active'
-                            : 'hover:text-orange'
+                            ? 'text-gray-200 active'
+                            : 'hover:text-gray-500'
                         }`}
                         role="menuitem">
                         {item.title}
