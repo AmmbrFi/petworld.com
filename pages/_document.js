@@ -23,6 +23,39 @@ class MyDocument extends Document {
           <link rel="preload" as="image" href="/c-bg.png" />
           <link rel="preload" as="image" href="/footer-bg.png" />
           <link rel="preload" as="image" href="/mast-1.svg" />
+
+          <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/favicons/apple-touch-icon.png?v=5"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicons/favicon-32x32.png?v=5"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicons/favicon-16x16.png?v=5"
+          />
+          <link rel="manifest" href="/favicons/site.webmanifest?v=5" />
+          <link
+            rel="mask-icon"
+            href="/favicons/safari-pinned-tab.svg?v=5"
+            color="#f08a4b"
+          />
+          <link rel="shortcut icon" href="/favicons/favicon.ico?v=5" />
+          <meta name="apple-mobile-web-app-title" content="Global Pet World" />
+          <meta name="application-name" content="Global Pet World" />
+          <meta name="msapplication-TileColor" content="#f08a4b" />
+          <meta
+            name="msapplication-config"
+            content="/favicons/browserconfig.xml?v=5"
+          />
+          <meta name="theme-color" content="#ffffff" />
         </Head>
         <body>
           <Main />
