@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { useRouter } from 'next/router'
@@ -17,12 +18,19 @@ const Menu = props => {
     <nav className="container">
       <div className="flex flex-row justify-between items-center py-6 mx-auto pt-6">
         <Link href="/">
-          <a>
-            <img src="/logo.svg" alt="logo" className="w-48" />
+          <a className="cursor-pointer">
+            <Image
+              src="/logo.svg"
+              alt="logo"
+              className="w-48"
+              priority
+              height="43"
+              width="192"
+            />
           </a>
         </Link>
 
-        <div className="hidden md:block flex flex-row items-center space-x-4 md:space-x-12 font-semibold menulinks">
+        <div className="hidden md:block flex flex-row items-center space-x-4 md:space-x-8 font-semibold menulinks">
           {menu.map((item, index) => {
             return (
               <Link key={index} href={item.path}>
