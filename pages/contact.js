@@ -13,8 +13,8 @@ export default function Home() {
       <NextSeo title="Contact Us" />
       <main>
         <div
-          className="bg-cover bg-center h-[380px] bg-gray-600"
-          style={{ backgroundImage: 'url(/c-bg.png)' }}>
+          className="bg-cover bg-center h-[460px] bg-gray-600"
+          style={{ backgroundImage: 'url(/contact-bg.png)' }}>
           <Menu />
           <Masthead />
         </div>

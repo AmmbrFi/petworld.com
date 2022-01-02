@@ -13,7 +13,7 @@ export default function Home() {
       <NextSeo title="Company" />
       <main>
         <div
-          className="bg-cover bg-center h-[380px] bg-gray-600"
+          className="bg-cover bg-center h-[460px] bg-gray-600"
           style={{ backgroundImage: 'url(/c-bg.png)' }}>
           <Menu />
           <Masthead />
