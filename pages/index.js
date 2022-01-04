@@ -1,3 +1,4 @@
+import ComingSoon from '../components/ComingSoon'
 import Contact from '../components/Contact'
 import Cta from '../components/Home/Cta'
 import Facilities from '../components/Home/Facilities'
@@ -10,23 +11,25 @@ import { NextSeo } from 'next-seo'
 import Partners from '../components/Home/Partners'
 import Whatitis from '../components/Home/Whatitis'
 
+// <div
+//   className="bg-cover bg-center h-[687px] bg-gray-600"
+//   style={{ backgroundImage: 'url(/mast-1.svg)' }}>
+//   <Menu />
+//   <Masthead />
+// </div>
+// <Whatitis />
+// <Facilities />
+// <Membership />
+// <Cta />
+// <Partners />
+// <Contact />
+
 export default function Home() {
   return (
     <>
       <NextSeo title="Home" />
-      <main>
-        <div
-          className="bg-cover bg-center h-[687px] bg-gray-600"
-          style={{ backgroundImage: 'url(/mast-1.svg)' }}>
-          <Menu />
-          <Masthead />
-        </div>
-        <Whatitis />
-        <Facilities />
-        <Membership />
-        <Cta />
-        <Partners />
-        <Contact />
+      <main className="relative">
+        <ComingSoon />
       </main>
       <Footer />
     </>
