@@ -6,11 +6,13 @@ const Contact = props => {
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="w-9/12">
-            <h2>Fill form</h2>
+            <h2>Contact Us</h2>
             <p className="text-lg leading-relaxed text-gray-500 mt-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
-              urna, porttitor rhoncus dolor purus{' '}
+              We are always pleased to receive messages, even if its just to
+              tell us you like our work or to tell us about your pet.
+              <br />
+              Feel free to also contact us about partnership opportunities in
+              your business.
             </p>
           </div>
           <div>

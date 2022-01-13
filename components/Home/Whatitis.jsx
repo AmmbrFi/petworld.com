@@ -18,18 +18,22 @@ const Whatitis = props => {
         alt=""
         className="absolute bottom-10 right-[200px]"
       />
-      <div className="flex flex-col items-center justify-center w-full md:w-2/5 mx-auto h-full">
+      <div className="flex flex-col items-center justify-center w-full md:w-full mx-auto h-full">
         <div className="text-orange flex flex-row">
           <img src="/pin.svg" alt="" className="mr-1" />
           Hong kong
         </div>
-        <h2 className="mb-3">What it is?</h2>
+        <h2 className="mb-3">What is Pet World ?</h2>
         <p className="text-gray-600 text-center leading-7">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-          purus sit amet luctus venenatis, lectus magna fringilla urna,
-          porttitor rhoncus dolor purus non enim praesent elementum facilisis
-          leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim
-          diam quis
+          Do you have to leave your best friend at home because the venue you
+          are visiting has a “NO PETS” sign?
+          <br />
+          Do you wish hotels and restaurants, and the many other places you
+          socialise in also accepted your pet?
+          <br />
+          Look no further. Pet World is that inclusive and welcoming place.
+          <br />
+          Opening soon in Hong Kong, and then the world.
         </p>
       </div>
     </section>
