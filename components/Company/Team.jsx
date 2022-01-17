@@ -82,10 +82,16 @@ const Team = props => {
             <p className="mt-2 px-4 text-center">
               Jan is a seasoned Dutch entrepreneur in consumer products, who has
               been based in Asia for over 20 years, has global exposure, and has
-              built an extensive business network. As a connector of people he
-              has his roots in agriculture and has over seven years experience
-              as a life coach. Jan is an active investor, especially in the
-              crypto space. Jan holds an EMBA degree from Kellogg-HKUST.
+              built an extensive business network.
+            </p>
+            <p className="mt-2 px-4 text-center">
+              As a connector of people he has his roots in agriculture and has
+              over seven years experience as a life coach.
+            </p>
+            <p className="mt-2 px-4 text-center">
+              {' '}
+              Jan is an active investor, especially in the crypto space. Jan
+              holds an EMBA degree from Kellogg-HKUST.
             </p>
           </div>
         </div>

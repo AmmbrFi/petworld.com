@@ -11,13 +11,16 @@ const SectionTwo = props => {
           <p className="text-lg leading-relaxed mt-2">
             Global Pets World Limited is a Hong Kong registered company that is
             developing a unique concept in hospitality and recreation – Pets
-            World. <br />
+            World.{' '}
+          </p>
+          <p className="text-lg leading-relaxed mt-4">
             In the real world, Pet World will be a collection of themed parks
             that cater specifically to pet lovers and pets in a fully inclusive
             and welcoming atmosphere. Pets World offers hotels, pet hotels with
             full boarding, restaurants, spas, pools and parks, complemented by
             veterinary health facilities and retail outlets.
-            <br />
+          </p>
+          <p className="text-lg leading-relaxed mt-4">
             In the Metaverse,Pets World will occupy prominent locations and will
             offer pet owners various games and opportunities to earn income,
             accompanied by their virtual pet friends.

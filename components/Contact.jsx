@@ -10,7 +10,8 @@ const Contact = props => {
             <p className="text-lg leading-relaxed text-gray-500 mt-4">
               We are always pleased to receive messages, even if its just to
               tell us you like our work or to tell us about your pet.
-              <br />
+            </p>
+            <p className="text-lg leading-relaxed text-gray-500 mt-4">
               Feel free to also contact us about partnership opportunities in
               your business.
             </p>
