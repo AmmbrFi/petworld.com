@@ -42,8 +42,9 @@ export default function Home() {
         </div>
         <Whatitis />
         <Facilities />
+        <Premium />
+        <Regular />
 
-        <Membership />
         <Cta />
         <Partners />
         <Contact />
