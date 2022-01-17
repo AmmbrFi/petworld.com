@@ -9,6 +9,8 @@ import Membership from '../components/Home/Membership'
 import Menu from '../components/Menu'
 import { NextSeo } from 'next-seo'
 import Partners from '../components/Home/Partners'
+import Premium from '../components/Membership/Premium'
+import Regular from '../components/Membership/Regular'
 import Whatitis from '../components/Home/Whatitis'
 
 // <div
@@ -23,13 +25,28 @@ import Whatitis from '../components/Home/Whatitis'
 // <Cta />
 // <Partners />
 // <Contact />
+//<ComingSoon />
+//<Premium />
+//<Regular />
 
 export default function Home() {
   return (
     <>
       <NextSeo title="Home" />
       <main className="relative">
-        <ComingSoon />
+        <div
+          className="bg-cover bg-center h-[687px] bg-gray-600"
+          style={{ backgroundImage: 'url(/mast-1.svg)' }}>
+          <Menu />
+          <Masthead />
+        </div>
+        <Whatitis />
+        <Facilities />
+
+        <Membership />
+        <Cta />
+        <Partners />
+        <Contact />
       </main>
       <Footer />
     </>
