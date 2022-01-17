@@ -7,8 +7,8 @@ const Team = props => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
         <div className="rbox patrn">
           <div className="flex flex-col items-center justify-center p-4">
-            <p className="text-xl mt-3">Chairman & CEO</p>
-            <p className="text-lg mt-2">Mark Chan Yan Tak</p>
+            <p className="text-xl mt-3 font-bold">Chairman & CEO</p>
+            <p className="text-lg mt-2 font-bold">Mark Chan Yan Tak</p>
             <p className="mt-2 px-4 text-center">
               Mark is a successful entrepreneur, CEO, Executive Director and
               Chairman of the Board of a listed Hong Kong entity. His latest
@@ -23,8 +23,8 @@ const Team = props => {
         </div>
         <div className="rbox patrn">
           <div className="flex flex-col items-center justify-center p-4">
-            <p className="text-xl mt-3">Advisor</p>
-            <p className="text-lg mt-2">Rakesh Rajagopal</p>
+            <p className="text-xl mt-3 font-bold">Advisor</p>
+            <p className="text-lg mt-2 font-bold">Rakesh Rajagopal</p>
             <p className="mt-2 px-4 text-center">
               Rakesh boasts an accomplished career in private banking,
               commodities, precious metals, and gemstones with companies like
@@ -41,8 +41,8 @@ const Team = props => {
         </div>
         <div className="rbox patrn">
           <div className="flex flex-col items-center justify-center p-4">
-            <p className="text-xl mt-3">Advisor</p>
-            <p className="text-lg mt-2">Derick Smith</p>
+            <p className="text-xl mt-3 font-bold">Advisor</p>
+            <p className="text-lg mt-2 font-bold">Derick Smith</p>
             <p className="mt-2 px-4 text-center">
               Derick started as a software engineer in the mid-1980s, working
               across a wide range of disciplines and technologies. His early
@@ -58,8 +58,8 @@ const Team = props => {
         </div>
         <div className="rbox patrn">
           <div className="flex flex-col items-center justify-center p-4">
-            <p className="text-xl mt-3">Advisor</p>
-            <p className="text-lg mt-2">Martin Feuersteiner </p>
+            <p className="text-xl mt-3 font-bold">Advisor</p>
+            <p className="text-lg mt-2 font-bold">Martin Feuersteiner </p>
             <p className="mt-2 px-4 text-center">
               Martin is a highly-skilled individual with focus on disruptive
               technology, offering over 22 years of experience representing
@@ -77,8 +77,8 @@ const Team = props => {
         </div>
         <div className="rbox patrn">
           <div className="flex flex-col items-center justify-center p-4">
-            <p className="text-xl mt-3">Advisor</p>
-            <p className="text-lg mt-2">Jan Verkade</p>
+            <p className="text-xl mt-3 font-bold">Advisor</p>
+            <p className="text-lg mt-2 font-bold">Jan Verkade</p>
             <p className="mt-2 px-4 text-center">
               Jan is a seasoned Dutch entrepreneur in consumer products, who has
               been based in Asia for over 20 years, has global exposure, and has

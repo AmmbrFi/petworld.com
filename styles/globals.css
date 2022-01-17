@@ -16,7 +16,7 @@
     @apply text-[#272838] font-serif text-3xl;
   }
   .rbox {
-    @apply rounded-lg  bg-gray-500 font-serif relative;
+    @apply rounded-lg  bg-gray-500  relative;
   }
   .rbox p {
     @apply bottom-3 left-3;
