@@ -4,7 +4,7 @@ const Regular = props => {
   return (
     <section className="container">
       <h2>Regular Membership Plans</h2>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-16 mt-6">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-12 mt-6">
         <div className="flex flex-col items-center justify-center">
           <div className="rbox patrn h-72">
             <div className="flex flex-col items-center justify-center p-4">
