@@ -24,7 +24,7 @@ const Regular = props => {
             </div>
           </div>
           <div className="rbox w-3/4  patrn p-6 text-center text-xl mt-6 font-bold">
-            <p>BUY NFT NOW</p>
+            <p className="cursor-pointer">BUY NFT NOW</p>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center">
@@ -46,7 +46,7 @@ const Regular = props => {
             </div>
           </div>
           <div className="rbox w-3/4  patrn p-6 text-center text-xl mt-6 font-bold">
-            <p>BUY NFT NOW</p>
+            <p className="cursor-pointer">BUY NFT NOW</p>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center">
@@ -67,7 +67,7 @@ const Regular = props => {
             </div>
           </div>
           <div className="rbox w-3/4  patrn p-6 text-center text-xl mt-6 font-bold">
-            <p>BUY NFT NOW</p>
+            <p className="cursor-pointer">BUY NFT NOW</p>
           </div>
         </div>
       </div>
