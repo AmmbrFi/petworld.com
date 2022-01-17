@@ -46,7 +46,7 @@ export default function Home() {
         <Regular />
 
         <Cta />
-        <Partners />
+
         <Contact />
       </main>
       <Footer />
