@@ -6,24 +6,24 @@ const Whatitis = props => {
       <img
         src="/Group209.svg"
         alt=""
-        className="absolute top-0  md:top-10 md:right-[200px] right-[8px]"
+        className="absolute -top-20  md:top-10 md:right-[200px] right-[8px] md:w-24 w-24"
       />
       <img
         src="/Group208.svg"
         alt=""
-        className="absolute md:top-10 top-2 md:left-[200px]"
+        className="absolute md:top-10 -top-16 md:left-[200px] left-[10px] md:w-20 w-20"
       />
       <img
         src="/Group210.svg"
         alt=""
-        className="absolute md:bottom-10 bottom-1 md:right-[200px] right-[8px]"
+        className="absolute md:bottom-10 -bottom-16 md:right-[200px] right-[8px] md:w-20 w-20"
       />
       <div className="flex flex-col items-center justify-center w-full md:w-full mx-auto h-full">
-        <div className="text-orange flex flex-row">
+        <div className="text-orange flex flex-row md:mb-2 mb-6">
           <img src="/pin.svg" alt="" className="mr-1" />
           Hong kong
         </div>
-        <h2 className="mb-3">What is Pet World ?</h2>
+        <h2 className="mb-3 md:text-4xl text-xl">What is Pet World ?</h2>
         <p className="text-gray-600 text-center leading-7">
           Do you have to leave your best friend at home because the venue you
           are visiting has a “NO PETS” sign?
