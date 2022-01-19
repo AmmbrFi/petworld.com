@@ -6,17 +6,17 @@ const Whatitis = props => {
       <img
         src="/Group209.svg"
         alt=""
-        className="absolute top-10 right-[200px]"
+        className="absolute top-0  md:top-10 md:right-[200px] right-[8px]"
       />
       <img
         src="/Group208.svg"
         alt=""
-        className="absolute top-10 left-[200px]"
+        className="absolute md:top-10 top-2 md:left-[200px]"
       />
       <img
         src="/Group210.svg"
         alt=""
-        className="absolute bottom-10 right-[200px]"
+        className="absolute md:bottom-10 bottom-1 md:right-[200px] right-[8px]"
       />
       <div className="flex flex-col items-center justify-center w-full md:w-full mx-auto h-full">
         <div className="text-orange flex flex-row">

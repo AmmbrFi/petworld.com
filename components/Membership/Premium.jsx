@@ -4,7 +4,7 @@ const Premium = props => {
   return (
     <section className="container">
       <h2>Premium Lifetime Membership Plans</h2>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-6">
         <div className="flex flex-col items-center justify-center">
           <div className="rbox patrn h-96">
             <div className="flex flex-col items-center justify-center p-4">

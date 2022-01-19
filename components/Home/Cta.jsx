@@ -4,7 +4,7 @@ import React from 'react'
 const Cta = props => {
   return (
     <section className="relative my-24 py-24">
-      <img src="/dog.svg" className="absolute right-0 -top-5" />
+      <img src="/dog.svg" className="absolute right-0 -top-10" />
       <img src="/Group210.svg" className="absolute -left-10 bottom-0" />
       <div
         className="container bg-cover rounded-lg overflow-hidden bg-no-repeat h-[410px]"
