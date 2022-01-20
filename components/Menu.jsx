@@ -7,6 +7,7 @@ const menu = [
   { title: 'Home', path: '/' },
   { title: 'Company', path: '/company' },
   { title: 'Membership', path: '/membership' },
+  { title: 'Marketplace', path: '/marketplace' },
   { title: 'Contact', path: '/contact' }
 ]
 
