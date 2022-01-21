@@ -17,7 +17,7 @@ const Marketplace = () => {
           <Masthead />
         </div>
         <section className="container my-20">
-          <div className="grid md:grid-cols-4 grid-cols-2 items-center justify-center mt-6  gap-5">
+          <div className="flex flex-row items-center justify-center mt-6 space-x-12">
             <div className="rbox patrn p-3 rounded">
               <div className="h-300 flex justify-center items-center overflow-hidden rounded-md bg-gray-700">
                 <a href={`/list/${new Date().getMilliseconds()}`}>
@@ -55,19 +55,6 @@ const Marketplace = () => {
                 </a>
               </div>
               <p className="my-4 font-medium text-lg text-gray-100">Rabbit</p>
-              <p>Price: 1000</p>
-            </div>
-            <div className="rbox patrn p-3 rounded">
-              <div className="h-300 flex justify-center items-center overflow-hidden rounded-md bg-gray-700">
-                <a href={`/list/${new Date().getMilliseconds()}`}>
-                  <img
-                    src={`https://source.unsplash.com/300x300/?dark&q=${new Date().getMilliseconds()}`}
-                    className="w-full"
-                    alt=""
-                  />
-                </a>
-              </div>
-              <p className="my-4 font-medium text-lg text-gray-100">Parrot</p>
               <p>Price: 1000</p>
             </div>
           </div>
