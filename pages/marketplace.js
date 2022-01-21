@@ -17,7 +17,7 @@ const Marketplace = () => {
           <Masthead />
         </div>
         <section className="container my-20">
-          <div className="flex flex-row items-center justify-center mt-6 space-x-12">
+          <div className="flex md:flex-row flex-col items-center justify-center mt-6 md:space-x-12 space-x-0 md:space-y-0 space-y-6">
             <div className="rbox patrn p-3 rounded">
               <div className="h-300 flex justify-center items-center overflow-hidden rounded-md bg-gray-700">
                 <a href={`/list/${new Date().getMilliseconds()}`}>
