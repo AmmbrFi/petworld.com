@@ -27,7 +27,7 @@ const NFTDetail = () => {
               </p>
               <p className="text-black text-2xl">1600 BUSD</p>
             </div>
-            <button class="bg-green-500 font-bold py-2 px-4 text-white rounded">
+            <button className="bg-green-500 font-bold py-2 px-4 text-white rounded">
               Buy Now
             </button>
           </div>
