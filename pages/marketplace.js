@@ -8,7 +8,7 @@ import React from 'react'
 const Marketplace = () => {
   return (
     <>
-      <NextSeo title="Marketplace" />
+      <NextSeo title="Nft Store" />
       <main>
         <div
           className="bg-cover bg-center h-[460px] bg-gray-600"
