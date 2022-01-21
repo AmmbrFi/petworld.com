@@ -9,7 +9,7 @@ const NFTDetail = () => {
             <img
               src={`https://placeimg.com/600/700/animals`}
               className="w-full"
-              alt=""
+              alt="Animals"
             />
           </div>
           <div>
