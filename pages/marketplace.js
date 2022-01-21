@@ -29,7 +29,7 @@ const Marketplace = () => {
                 </a>
               </div>
               <p className="my-4 font-medium text-lg text-gray-100">Cat</p>
-              <p>BUSD 10,000</p>
+              <p>Price: 10,000</p>
             </div>
             <div className="rbox patrn p-3 rounded">
               <div className="h-300 flex justify-center items-center overflow-hidden rounded-md bg-gray-700">
@@ -42,7 +42,7 @@ const Marketplace = () => {
                 </a>
               </div>
               <p className="my-4 font-medium text-lg text-gray-100">Dog</p>
-              <p>BUSD 200</p>
+              <p>Price: 2000</p>
             </div>
             <div className="rbox patrn p-3 rounded">
               <div className="h-300 flex justify-center items-center overflow-hidden rounded-md bg-gray-700">
@@ -55,7 +55,7 @@ const Marketplace = () => {
                 </a>
               </div>
               <p className="my-4 font-medium text-lg text-gray-100">Rabbit</p>
-              <p>BUSD 100</p>
+              <p>Price: 1000</p>
             </div>
             <div className="rbox patrn p-3 rounded">
               <div className="h-300 flex justify-center items-center overflow-hidden rounded-md bg-gray-700">
@@ -68,7 +68,7 @@ const Marketplace = () => {
                 </a>
               </div>
               <p className="my-4 font-medium text-lg text-gray-100">Parrot</p>
-              <p>BUSD 100</p>
+              <p>Price: 1000</p>
             </div>
           </div>
         </section>

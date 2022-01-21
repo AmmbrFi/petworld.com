@@ -18,7 +18,7 @@ const NftCard = () => {
       </a>
 
       <div className="flex justify-between items-center my-2">
-        <div className="font-bold text-lg">Prize</div>
+        <div className="font-bold text-lg">Price</div>
       </div>
     </div>
   )
