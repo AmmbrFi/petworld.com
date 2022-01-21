@@ -17,102 +17,88 @@ const Marketplace = () => {
           <Masthead />
         </div>
         <section className="container my-20">
-          <div className="grid md:grid-cols-3 grid-cols-2 items-center justify-center mt-6 gap-24">
-            <div className="rbox patrn p-3 rounded">
-              <div className="h-300 flex justify-center items-center overflow-hidden rounded-md rbox patrn">
-                <a href={`/list/${new Date().getMilliseconds()}`}>
-                  <img
-                    src={`https://source.unsplash.com/300x300/?dark&q=${new Date().getMilliseconds()}`}
-                    className="w-full"
-                    alt=""
-                  />
-                </a>
-              </div>
-              <p className="my-4 font-medium text-lg text-gray-100 pl-2">
+          <div className="grid md:grid-cols-3 grid-cols-2 items-center justify-center mt-6 gap-8">
+            <div className="rbox patrn p-5 rounded-lg">
+              <a href={`/list/${new Date().getMilliseconds()}`}>
+                <img
+                  src={`https://placeimg.com/500/500/animals`}
+                  className="w-full rounded-lg opacity-80"
+                  alt=""
+                />
+              </a>
+              <p className="my-4 font-bold text-2xl text-gray-100 pl-2 uppercase">
                 Diamond
               </p>
             </div>
-            <div className="rbox patrn p-3 rounded">
-              <div className="h-300 flex justify-center items-center overflow-hidden rounded-md rbox patrn">
-                <a href={`/list/${new Date().getMilliseconds()}`}>
-                  <img
-                    src={`https://source.unsplash.com/300x300/?dark&q=${new Date().getMilliseconds()}`}
-                    className="w-full"
-                    alt=""
-                  />
-                </a>
-              </div>
-              <p className="my-4 font-medium text-lg text-gray-100 pl-2">
+            <div className="rbox patrn p-5 rounded-lg">
+              <a href={`/list/${new Date().getMilliseconds()}`}>
+                <img
+                  src={`https://placeimg.com/490/500/animals`}
+                  className="w-full rounded-lg opacity-80"
+                  alt=""
+                />
+              </a>
+              <p className="my-4 font-bold text-2xl text-gray-100 pl-2 uppercase">
                 Ruby
               </p>
             </div>
-            <div className="rbox patrn p-3 rounded">
-              <div className="h-300 flex justify-center items-center overflow-hidden rounded-md rbox patrn">
-                <a href={`/list/${new Date().getMilliseconds()}`}>
-                  <img
-                    src={`https://source.unsplash.com/300x300/?dark&q=${new Date().getMilliseconds()}`}
-                    className="w-full"
-                    alt=""
-                  />
-                </a>
-              </div>
-              <p className="my-4 font-medium text-lg text-gray-100 pl-2">
+            <div className="rbox patrn p-5 rounded-lg">
+              <a href={`/list/${new Date().getMilliseconds()}`}>
+                <img
+                  src={`https://placeimg.com/480/500/animals`}
+                  className="w-full rounded-lg opacity-80"
+                  alt=""
+                />
+              </a>
+              <p className="my-4 font-bold text-2xl text-gray-100 pl-2 uppercase">
                 Emerald
               </p>
             </div>
-            <div className="rbox patrn p-3 rounded">
-              <div className="h-300 flex justify-center items-center overflow-hidden rounded-md rbox patrn">
-                <a href={`/list/${new Date().getMilliseconds()}`}>
-                  <img
-                    src={`https://source.unsplash.com/300x300/?dark&q=${new Date().getMilliseconds()}`}
-                    className="w-full"
-                    alt=""
-                  />
-                </a>
-              </div>
-              <p className="my-4 font-medium text-lg text-gray-100 pl-2">
+            <div className="rbox patrn p-5 rounded-lg">
+              <a href={`/list/${new Date().getMilliseconds()}`}>
+                <img
+                  src={`https://placeimg.com/510/500/animals`}
+                  className="w-full rounded-lg opacity-80"
+                  alt=""
+                />
+              </a>
+              <p className="my-4 font-bold text-2xl text-gray-100 pl-2 uppercase">
                 Paraiba
               </p>
             </div>
-            <div className="rbox patrn p-3 rounded">
-              <div className="h-300 flex justify-center items-center overflow-hidden rounded-md rbox patrn">
-                <a href={`/list/${new Date().getMilliseconds()}`}>
-                  <img
-                    src={`https://source.unsplash.com/300x300/?dark&q=${new Date().getMilliseconds()}`}
-                    className="w-full"
-                    alt=""
-                  />
-                </a>
-              </div>
-              <p className="my-4 font-medium text-lg text-gray-100 pl-2">
+            <div className="rbox patrn p-5 rounded-lg">
+              <a href={`/list/${new Date().getMilliseconds()}`}>
+                <img
+                  src={`https://placeimg.com/495/500/animals`}
+                  className="w-full rounded-lg opacity-80"
+                  alt=""
+                />
+              </a>
+              <p className="my-4 font-bold text-2xl text-gray-100 pl-2 uppercase">
                 Sapphire
               </p>
             </div>
-            <div className="rbox patrn p-3 rounded">
-              <div className="h-300 flex justify-center items-center overflow-hidden rounded-md rbox patrn">
-                <a href={`/list/${new Date().getMilliseconds()}`}>
-                  <img
-                    src={`https://source.unsplash.com/300x300/?dark&q=${new Date().getMilliseconds()}`}
-                    className="w-full"
-                    alt=""
-                  />
-                </a>
-              </div>
-              <p className="my-4 font-medium text-lg text-gray-100 pl-2">
+            <div className="rbox patrn p-5 rounded-lg">
+              <a href={`/list/${new Date().getMilliseconds()}`}>
+                <img
+                  src={`https://placeimg.com/490/500/animals`}
+                  className="w-full rounded-lg opacity-80 "
+                  alt=""
+                />
+              </a>
+              <p className="my-4 font-bold text-2xl text-gray-100 pl-2 uppercase">
                 Aquamarine
               </p>
             </div>
-            <div className="rbox patrn p-3 rounded">
-              <div className="h-300 flex justify-center items-center overflow-hidden rounded-md rbox patrn">
-                <a href={`/list/${new Date().getMilliseconds()}`}>
-                  <img
-                    src={`https://source.unsplash.com/300x300/?dark&q=${new Date().getMilliseconds()}`}
-                    className="w-full"
-                    alt=""
-                  />
-                </a>
-              </div>
-              <p className="my-4 font-medium text-lg text-gray-100 pl-2">
+            <div className="rbox patrn p-5 rounded-lg">
+              <a href={`/list/${new Date().getMilliseconds()}`}>
+                <img
+                  src={`https://placeimg.com/485/500/animals`}
+                  className="w-full rounded-lg opacity-80"
+                  alt=""
+                />
+              </a>
+              <p className="my-4 font-bold text-2xl text-gray-100 pl-2 uppercase">
                 Garnet
               </p>
             </div>
