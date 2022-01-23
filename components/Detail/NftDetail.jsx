@@ -6,26 +6,17 @@ const NFTDetail = () => {
       <div className="container px-4 my-12 text-black">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div>
-            <img
-              src={`https://placeimg.com/600/700/animals`}
-              className="w-full"
-              alt="Animals"
-            />
+            <img src={`/Anjing.png`} className="w-full" alt="Animals" />
           </div>
           <div>
-            <h1 className="text-3xl font-semibold text-black">Name</h1>
+            <h1 className="text-3xl font-semibold text-black">Anjing</h1>
             <p className="text-base">Diamond</p>
 
             <div className="flex flex-col my-4 space-y-5">
               <p>
-                {`Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy text
-                ever since the 1500s, when an unknown printer took a galley of
-                type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged.`}
+                {`Diamond is a solid form of the element carbon with its atoms arranged in a crystal structure called diamond cubic. At room temperature and pressure, another solid form of carbon known as graphite is the chemically stable form of carbon, but diamond converts to it extremely slowly. Diamond has the highest hardness and thermal conductivity of any natural material, properties that are used in major industrial applications such as cutting and polishing tools.`}
               </p>
-              <p className="text-black text-2xl">1600 BUSD</p>
+              <p className="text-black text-2xl">99,000</p>
             </div>
             <button className="bg-green-500 font-bold py-2 px-4 text-white rounded">
               Buy Now
