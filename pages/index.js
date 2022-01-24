@@ -35,22 +35,22 @@ export default function Home() {
       <NextSeo title="Home" />
       <main className="relative">
         <div
-          className="bg-cover  bg-gray-600"
-          style={{ backgroundImage: 'url(/mast-1.svg)' }}>
+          className="bg-cover bg-gray-600"
+          style={{ backgroundImage: 'url(/pet-banner.mp4)' }}>
           <Menu />
           <Masthead />
-
-          <Whatitis />
-          <Facilities />
-          <Premium />
-          <Regular />
-
-          <Cta />
-
-          <Contact />
-
-          <Footer />
         </div>
+
+        <Whatitis />
+        <Facilities />
+        <Premium />
+        <Regular />
+
+        <Cta />
+
+        <Contact />
+
+        <Footer />
       </main>
     </>
   )
