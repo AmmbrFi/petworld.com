@@ -26,6 +26,13 @@ module.exports = {
       orange: '#F08A4B',
       green: colors.green
     },
+    backgroundSize: {
+      auto: 'auto',
+      cover: 'cover',
+      contain: 'contain',
+      '100%': '100%',
+      '16': '4rem'
+    },
     extend: {}
   },
   plugins: []
