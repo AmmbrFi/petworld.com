@@ -36,7 +36,7 @@ export default function Home() {
       <main className="relative">
         <div
           className="bg-cover bg-gray-600"
-          style={{ backgroundImage: 'url(/pet-banner.mp4)' }}>
+          style={{ backgroundImage: 'url(/landingpage-bg.mp4)' }}>
           <Menu />
           <Masthead />
         </div>
