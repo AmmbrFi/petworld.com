@@ -39,9 +39,10 @@ const Footer = props => {
             })}
           </div>
         </div>
-        <div className="hidden md:flex flex-row justify-between items-center px-4 md:px-10 text-orange mt-6">
-          <p>Hong Kong, street 123</p>
-          <p>office@petworld.com</p>
+        <div className="hidden md:flex flex-col px-4 md:px-10 text-orange mt-6">
+          <p>1111-12, 11th floor, Lu Plaza,2 Wing Yip Street, Kwun Tong,</p>
+
+          <p>Kowloon, Hong Kong</p>
         </div>
         <div className="border-t border-gray-200 my-4" />
 

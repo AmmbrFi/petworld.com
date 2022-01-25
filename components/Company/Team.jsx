@@ -75,26 +75,6 @@ const Team = props => {
             </p>
           </div>
         </div>
-        <div className="rbox patrn">
-          <div className="flex flex-col items-center justify-center p-4">
-            <p className="text-xl mt-3 font-bold">Advisor</p>
-            <p className="text-lg mt-2 font-bold">Jan Verkade</p>
-            <p className="mt-2 px-4 text-center">
-              Jan is a seasoned Dutch entrepreneur in consumer products, who has
-              been based in Asia for over 20 years, has global exposure, and has
-              built an extensive business network.
-            </p>
-            <p className="mt-2 px-4 text-center">
-              As a connector of people he has his roots in agriculture and has
-              over seven years experience as a life coach.
-            </p>
-            <p className="mt-2 px-4 text-center">
-              {' '}
-              Jan is an active investor, especially in the crypto space. Jan
-              holds an EMBA degree from Kellogg-HKUST.
-            </p>
-          </div>
-        </div>
       </div>
     </section>
   )
