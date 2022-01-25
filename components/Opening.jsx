@@ -7,7 +7,7 @@ const Opening = props => {
       style={{ backgroundImage: 'url(/mast-1.svg)' }}>
       <div className="flex flex-col items-center justify-center h-full z-30">
         <h2 className="drop-shadow-2xl text-5xl text-gray-300">
-          Opening Valentine's Day 14 February 2022
+          {`Opening Valentine's Day 14 February 2022`}
         </h2>
       </div>
     </div>
