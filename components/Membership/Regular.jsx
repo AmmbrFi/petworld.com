@@ -25,9 +25,9 @@ const Regular = props => {
             </div>
           </div>
           <Link href="/nftstore">
-            <div className="rbox w-3/4  patrn p-6 text-center text-xl mt-6 font-bold cursor-pointer">
-              <a className="cursor-pointer">BUY NFT NOW</a>
-            </div>
+            <a className="rbox w-3/4  patrn p-6 text-center text-xl mt-6 font-bold cursor-pointer">
+              <p className="cursor-pointer">BUY NFT NOW</p>
+            </a>
           </Link>
         </div>
         <div className="flex flex-col items-center justify-center">
@@ -49,9 +49,9 @@ const Regular = props => {
             </div>
           </div>
           <Link href="/nftstore">
-            <div className="rbox w-3/4  patrn p-6 text-center text-xl mt-6 font-bold cursor-pointer">
-              <a className="cursor-pointer">BUY NFT NOW</a>
-            </div>
+            <a className="rbox w-3/4  patrn p-6 text-center text-xl mt-6 font-bold cursor-pointer">
+              <p className="cursor-pointer">BUY NFT NOW</p>
+            </a>
           </Link>
         </div>
         <div className="flex flex-col items-center justify-center">
@@ -72,9 +72,9 @@ const Regular = props => {
             </div>
           </div>
           <Link href="/nftstore">
-            <div className="rbox w-3/4  patrn p-6 text-center text-xl mt-6 font-bold cursor-pointer">
-              <a className="cursor-pointer">BUY NFT NOW</a>
-            </div>
+            <a className="rbox w-3/4  patrn p-6 text-center text-xl mt-6 font-bold cursor-pointer">
+              <p className="cursor-pointer">BUY NFT NOW</p>
+            </a>
           </Link>
         </div>
       </div>
