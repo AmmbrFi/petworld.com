@@ -33,23 +33,29 @@ export default function Home() {
   return (
     <>
       <NextSeo title="Home" />
-      <main className="relative">
-        <div
-          className="bg-cover bg-gray-600"
-          style={{ backgroundImage: 'url(/outputa.mp4)' }}>
-          <Menu />
-          <Masthead />
+      <main>
+        <div className="relative h-screen">
+          <div className="absolute top-0 left-0 w-screen h-[800px]">
+            <video autoPlay loop muted>
+              <source src="/landing-1.webm" type="video/webm" />
+              <source src="/landing-1.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div className="absolute top-0 left-0 w-screen h-[800px]">
+            <Menu />
+            <Masthead />
+          </div>
         </div>
+        <div className="relative">
+          <Whatitis />
+          <Facilities />
+          <Premium />
+          <Regular />
 
-        <Whatitis />
-        <Facilities />
-        <Premium />
-        <Regular />
+          <Cta />
 
-        <Cta />
-
-        <Contact />
-
+          <Contact />
+        </div>
         <Footer />
       </main>
     </>

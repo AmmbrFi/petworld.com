@@ -115,6 +115,7 @@ const Marketplace = () => {
     <>
       <NextSeo title="Nft Store" />
       <main>
+        <Menu />
         <Opening />
       </main>
     </>

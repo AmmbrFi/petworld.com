@@ -19,9 +19,9 @@ const Whatitis = props => {
         className="absolute md:bottom-10 -bottom-16 md:right-[200px] right-[8px] md:w-20 w-20"
       />
       <div className="flex flex-col items-center justify-center w-full md:w-full mx-auto h-full">
-        <div className="text-orange flex flex-row md:mb-2 mb-6 ">
+        <div className="text-orange flex flex-row md:mb-2 mb-6 w-40 justify-center">
           <img src="/pin.svg" alt="" className="mr-1" />
-          <p className="md:w-full w-full">Hong kong</p>
+          <div className="">Hong kong</div>
         </div>
         <h2 className="mb-3 md:text-4xl text-xl">What is Pet World ?</h2>
         <p className="text-gray-600 text-center leading-7">
