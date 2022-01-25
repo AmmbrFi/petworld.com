@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Premium = props => {
@@ -25,9 +26,11 @@ const Premium = props => {
               <p className="mt-3 px-4 text-center"> US$ 99,000</p>
             </div>
           </div>
-          <div className="rbox w-3/4  patrn p-6 text-center text-xl mt-6 font-bold">
-            <p className="cursor-pointer">BUY NFT NOW</p>
-          </div>
+          <Link href="/nftstore">
+            <div className="rbox w-3/4  patrn p-6 text-center text-xl mt-6 font-bold cursor-pointer">
+              <a className="cursor-pointer">BUY NFT NOW</a>
+            </div>
+          </Link>
         </div>
         <div className="flex flex-col items-center justify-center">
           <div className="rbox patrn h-96">
@@ -49,9 +52,11 @@ const Premium = props => {
               <p className="mt-3 px-4 text-center"> US$ 45,000</p>
             </div>
           </div>
-          <div className="rbox w-3/4  patrn p-6 text-center text-xl mt-6 font-bold">
-            <p className="cursor-pointer">BUY NFT NOW</p>
-          </div>
+          <Link href="/nftstore">
+            <div className="rbox w-3/4  patrn p-6 text-center text-xl mt-6 font-bold cursor-pointer">
+              <a className="cursor-pointer">BUY NFT NOW</a>
+            </div>
+          </Link>
         </div>
         <div className="flex flex-col items-center justify-center">
           <div className="rbox patrn h-96">
@@ -74,9 +79,11 @@ const Premium = props => {
               <p className="mt-3 px-4 text-center"> US$ 20,000</p>
             </div>
           </div>
-          <div className="rbox w-3/4  patrn p-6 text-center text-xl mt-6 font-bold">
-            <p className="cursor-pointer">BUY NFT NOW</p>
-          </div>
+          <Link href="/nftstore">
+            <div className="rbox w-3/4  patrn p-6 text-center text-xl mt-6 font-bold cursor-pointer">
+              <a className="cursor-pointer">BUY NFT NOW</a>
+            </div>
+          </Link>
         </div>
         <div className="flex flex-col items-center justify-center">
           <div className="rbox patrn h-96">
@@ -96,9 +103,11 @@ const Premium = props => {
               <p className="mt-3 px-4 text-center"> US$ 7,500</p>
             </div>
           </div>
-          <div className="rbox w-3/4  patrn p-6 text-center text-xl mt-6 font-bold">
-            <p className="cursor-pointer">BUY NFT NOW</p>
-          </div>
+          <Link href="/nftstore">
+            <div className="rbox w-3/4  patrn p-6 text-center text-xl mt-6 font-bold cursor-pointer">
+              <a className="cursor-pointer">BUY NFT NOW</a>
+            </div>
+          </Link>
         </div>
       </div>
     </section>

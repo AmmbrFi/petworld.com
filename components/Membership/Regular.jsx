@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Regular = props => {
@@ -23,9 +24,11 @@ const Regular = props => {
               <p className="mt-3 px-4 text-center"> US$ 1,500</p>
             </div>
           </div>
-          <div className="rbox w-3/4  patrn p-6 text-center text-xl mt-6 font-bold">
-            <p className="cursor-pointer">BUY NFT NOW</p>
-          </div>
+          <Link href="/nftstore">
+            <div className="rbox w-3/4  patrn p-6 text-center text-xl mt-6 font-bold cursor-pointer">
+              <a className="cursor-pointer">BUY NFT NOW</a>
+            </div>
+          </Link>
         </div>
         <div className="flex flex-col items-center justify-center">
           <div className="rbox patrn h-72">
@@ -45,9 +48,11 @@ const Regular = props => {
               <p className="mt-3 px-4 text-center"> US$ 500</p>
             </div>
           </div>
-          <div className="rbox w-3/4  patrn p-6 text-center text-xl mt-6 font-bold">
-            <p className="cursor-pointer">BUY NFT NOW</p>
-          </div>
+          <Link href="/nftstore">
+            <div className="rbox w-3/4  patrn p-6 text-center text-xl mt-6 font-bold cursor-pointer">
+              <a className="cursor-pointer">BUY NFT NOW</a>
+            </div>
+          </Link>
         </div>
         <div className="flex flex-col items-center justify-center">
           <div className="rbox patrn h-72">
@@ -66,9 +71,11 @@ const Regular = props => {
               <p className="mt-3 px-4 text-center"> US$ 99</p>
             </div>
           </div>
-          <div className="rbox w-3/4  patrn p-6 text-center text-xl mt-6 font-bold">
-            <p className="cursor-pointer">BUY NFT NOW</p>
-          </div>
+          <Link href="/nftstore">
+            <div className="rbox w-3/4  patrn p-6 text-center text-xl mt-6 font-bold cursor-pointer">
+              <a className="cursor-pointer">BUY NFT NOW</a>
+            </div>
+          </Link>
         </div>
       </div>
     </section>
