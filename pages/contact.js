@@ -18,7 +18,7 @@ export default function Home() {
           <Menu />
           <Masthead />
         </div>
-        <SectionOne />
+
         <Feature />
         <Contact />
       </main>

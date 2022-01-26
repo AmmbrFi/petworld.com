@@ -3,6 +3,8 @@ import Image from 'next/image'
 import Masthead from '../components/Membership/Masthead'
 import Menu from '../components/Menu'
 import { NextSeo } from 'next-seo'
+import Premium from '../components/Membership/Premium'
+import Regular from '../components/Membership/Regular'
 import SectionOne from '../components/Company/SectionOne'
 import SectionTwo from '../components/Company/SectionTwo'
 import Team from '../components/Company/Team'
@@ -18,9 +20,8 @@ export default function Home() {
           <Menu />
           <Masthead />
         </div>
-        <SectionOne />
-        <Team />
-        <SectionTwo />
+        <Premium />
+        <Regular />
       </main>
       <Footer />
     </>

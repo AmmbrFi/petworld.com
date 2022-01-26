@@ -9,6 +9,8 @@ import Membership from '../components/Home/Membership'
 import Menu from '../components/Menu'
 import { NextSeo } from 'next-seo'
 import Partners from '../components/Home/Partners'
+import Premium from '../components/Membership/Premium'
+import Regular from '../components/Membership/Regular'
 import Whatitis from '../components/Home/Whatitis'
 
 // <div
@@ -23,15 +25,39 @@ import Whatitis from '../components/Home/Whatitis'
 // <Cta />
 // <Partners />
 // <Contact />
+//<ComingSoon />
+//<Premium />
+//<Regular />
 
 export default function Home() {
   return (
     <>
       <NextSeo title="Home" />
-      <main className="relative">
-        <ComingSoon />
+      <main>
+        <div className="relative h-screen">
+          <div className="absolute top-0 left-0 w-screen h-[800px]">
+            <video autoPlay loop muted>
+              <source src="/landing-1.webm" type="video/webm" />
+              <source src="/landing-1.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div className="absolute top-0 left-0 w-screen h-[800px]">
+            <Menu />
+            <Masthead />
+          </div>
+        </div>
+        <div className="relative">
+          <Whatitis />
+          <Facilities />
+          <Premium />
+          <Regular />
+
+          <Cta />
+
+          <Contact />
+        </div>
+        <Footer />
       </main>
-      <Footer />
     </>
   )
 }

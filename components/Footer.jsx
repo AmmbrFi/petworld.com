@@ -39,9 +39,9 @@ const Footer = props => {
             })}
           </div>
         </div>
-        <div className="hidden md:flex flex-row justify-between items-center px-4 md:px-10 text-orange mt-6">
-          <p>Hong Kong, street 123</p>
-          <p>office@petworld.com</p>
+        <div className="hidden md:flex flex-col px-4 md:px-10 text-orange mt-6">
+          <p>1111-12, 11th floor, Lu Plaza, 2 Wing Yip Street,</p>
+          <p>Kwun Tong, Kowloon, Hong Kong</p>
         </div>
         <div className="border-t border-gray-200 my-4" />
 
@@ -57,29 +57,34 @@ const Footer = props => {
           </div>
 
           <div className="hidden md:flex flex-row items-center space-x-4">
-            <Link href="/">
-              <a className="cursor-pointer text-gray-500">
+            <Link href="https://www.facebook.com/Pet-Paws-NFT-103456708915004">
+              <a className="cursor-pointer text-gray-500" target="_blank">
                 <img src="/Group218.png" className="h-8 w-8" />
               </a>
             </Link>
-            <Link href="/">
-              <a className="cursor-pointer text-gray-500">
+            <Link href="https://www.instagram.com/petpawsnft/">
+              <a className="cursor-pointer text-gray-500" target="_blank">
                 <img src="/Group219.png" className="h-8 w-8" />
               </a>
             </Link>
-            <Link href="/">
-              <a className="cursor-pointer text-gray-500">
+            <Link href="https://twitter.com/petpawsnft">
+              <a className="cursor-pointer text-gray-500" target="_blank">
                 <img src="/Group220.png" className="h-8 w-8" />
               </a>
             </Link>
-            <Link href="/">
-              <a className="cursor-pointer text-gray-500">
-                <img src="/Group221.png" className="h-8 w-8" />
+            <Link href="https://www.pinterest.com/PetPawsNFT/">
+              <a className="cursor-pointer text-gray-500" target="_blank">
+                <img src="/Pintrest.png" className="h-8 w-8" />
               </a>
             </Link>
-            <Link href="/">
-              <a className="cursor-pointer text-gray-500">
-                <img src="/Group222.png" className="h-8 w-8" />
+            <Link href="https://www.twitch.tv/petpawsnft">
+              <a className="cursor-pointer text-gray-500" target="_blank">
+                <img src="/Twitch.png" className="h-8 w-8" />
+              </a>
+            </Link>
+            <Link href="https://t.me/GlobalPetsWorld">
+              <a className="cursor-pointer text-gray-500" target="_blank">
+                <img src="/Telegram.png" className="h-8 w-8" />
               </a>
             </Link>
           </div>
