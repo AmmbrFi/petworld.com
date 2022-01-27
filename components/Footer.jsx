@@ -82,7 +82,7 @@ const Footer = props => {
                 <img src="/Twitch.png" className="h-8 w-8" />
               </a>
             </Link>
-            <Link href="https://t.me/GlobalPetsWorld">
+            <Link href="https://t.me/+sR_gnanl9_Q4MTY0">
               <a className="cursor-pointer text-gray-500" target="_blank">
                 <img src="/Telegram.png" className="h-8 w-8" />
               </a>
