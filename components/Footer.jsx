@@ -56,7 +56,7 @@ const Footer = props => {
             </Link>
           </div>
 
-          <div className="hidden md:flex flex-row items-center space-x-4">
+          <div className="flex flex-row items-center md:space-x-4 space-x-2">
             <Link href="https://www.facebook.com/Pet-Paws-NFT-103456708915004">
               <a className="cursor-pointer text-gray-500" target="_blank">
                 <img src="/Group218.png" className="h-8 w-8" />
