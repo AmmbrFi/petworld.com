@@ -5,6 +5,7 @@ const menu = [
   { title: 'Home', path: '/' },
   { title: 'Company', path: '/company' },
   { title: 'Membership', path: '/membership' },
+  { title: 'NFT store', path: '/nftstore' },
   { title: 'Contact', path: '/contact' }
 ]
 
@@ -29,7 +30,7 @@ const Footer = props => {
                   <a
                     className={`cursor-pointer under-line text-gray-500 ${
                       router.pathname === item.path
-                        ? 'text-orange active'
+                        ? 'text-oranges active'
                         : 'hover:text-orange'
                     }`}>
                     {item.title}
