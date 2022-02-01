@@ -24,7 +24,8 @@ module.exports = {
       white: colors.white,
       gray: colors.gray,
       orange: '#F08A4B',
-      green: colors.green
+      green: colors.green,
+      oranges: '#ff8c00'
     },
     backgroundSize: {
       auto: 'auto',
