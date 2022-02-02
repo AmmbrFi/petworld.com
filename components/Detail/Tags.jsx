@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Tags = props => {
   const [display, setDisplay] = useState(1)
-  console.log('$$$', display)
+
   return (
     <div className="flex flex-row md:space-x-6 space-x-2">
       <div
