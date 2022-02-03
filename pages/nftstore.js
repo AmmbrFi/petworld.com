@@ -28,7 +28,7 @@ const Marketplace = () => {
                   alt=""
                 />
               </a>
-              <p className="my-4 font-bold text-2xl text-orange pl-2 uppercase">
+              <p className="my-4 font-bold md:text-2xl text-sm text-orange pl-2 uppercase">
                 Diamond
               </p>
             </div>
@@ -41,7 +41,7 @@ const Marketplace = () => {
                   alt=""
                 />
               </a>
-              <p className="my-4 font-bold text-2xl text-orange pl-2 uppercase">
+              <p className="my-4 font-bold md:text-2xl text-sm text-orange pl-2 uppercase">
                 Ruby
               </p>
             </div>
@@ -53,7 +53,7 @@ const Marketplace = () => {
                   alt=""
                 />
               </a>
-              <p className="my-4 font-bold text-2xl text-orange pl-2 uppercase">
+              <p className="my-4 font-bold md:text-2xl text-sm text-orange pl-2 uppercase">
                 Emerald
               </p>
             </div>
@@ -65,7 +65,7 @@ const Marketplace = () => {
                   alt=""
                 />
               </a>
-              <p className="my-4 font-bold text-2xl text-orange pl-2 uppercase">
+              <p className="my-4 font-bold md:text-2xl text-sm text-orange pl-2 uppercase">
                 Paraiba
               </p>
             </div>
@@ -77,7 +77,7 @@ const Marketplace = () => {
                   alt=""
                 />
               </a>
-              <p className="my-4 font-bold text-2xl text-orange pl-2 uppercase">
+              <p className="my-4 font-bold md:text-2xl text-sm text-orange pl-2 uppercase">
                 Sapphire
               </p>
             </div>
@@ -89,7 +89,7 @@ const Marketplace = () => {
                   alt=""
                 />
               </a>
-              <p className="my-4 font-bold text-2xl text-orange pl-2 uppercase">
+              <p className="my-4 font-bold md:text-2xl text-sm text-orange pl-2 uppercase">
                 Aquamarine
               </p>
             </div>
@@ -101,7 +101,7 @@ const Marketplace = () => {
                   alt=""
                 />
               </a>
-              <p className="my-4 font-bold text-2xl text-orange pl-2 uppercase">
+              <p className="my-4 font-bold md:text-2xl text-sm text-orange pl-2 uppercase">
                 Garnet
               </p>
             </div>
