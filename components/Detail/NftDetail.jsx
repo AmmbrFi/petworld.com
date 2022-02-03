@@ -4,7 +4,7 @@ const NFTDetail = () => {
   return (
     <div>
       <div className="container px-4 my-12 text-black">
-        <div className="flex flex-row  items-center md:space-x-8 space-x-1">
+        <div className="flex flex-row  items-center md:space-x-8 space-x-3">
           <div className="bg-orange rounded-full md:p-4 p-1 cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
