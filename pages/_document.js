@@ -59,21 +59,15 @@ class MyDocument extends Document {
           />
           <meta name="theme-color" content="#ffffff" />
 
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=[Tracking ID]"
-          />
-
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '[Tracking ID]', { page_path: window.location.pathname });
-            `
-            }}
-          />
+          <script type="text/javascript" src="/fbscript.js"></script>
+          <noscript>
+            <img
+              height="1"
+              width="1"
+              style={{ display: 'none' }}
+              src="https://www.facebook.com/tr?id=291080139627957&ev=PageView&noscript=1"
+            />
+          </noscript>
         </Head>
         <body>
           <Main />
