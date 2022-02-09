@@ -4,23 +4,26 @@ import InnerMenu from '../../components/InnerMenu'
 import { NextSeo } from 'next-seo'
 import NftDetail from '../../components/Detail/NftDetail'
 import React from 'react'
-import Tags from '../../components/Detail/Tags'
 
-const NFTPage = () => {
+const NFTPage = ({ category }) => {
   return (
     <>
       <NextSeo title="NftDetail" />
       <main>
         <InnerMenu />
-
-        <section className="container">
-          <Tags />
-          <NftDetail />
-        </section>
+        <div className="container">
+          <NftDetail category={category} />
+        </div>
       </main>
       <Footer />
     </>
   )
+}
+
+export async function getServerSideProps(ctx) {
+  let { category } = ctx.query
+
+  return { props: { category } }
 }
 
 export default NFTPage
