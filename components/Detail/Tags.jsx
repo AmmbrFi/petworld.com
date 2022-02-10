@@ -2,15 +2,16 @@ import React, { useEffect, useState } from 'react'
 
 import Link from 'next/link'
 import { subCategory } from '../../actions'
+import { useLocalStorage } from '../../utils'
 
-const Tags = ({ category, list = 'all', setList }) => {
-  const [subCategories, setSubCategories] = useState([])
+const Tags = ({ category, subCat, tokenId }) => {
+  const [subCategories, setSubCategories] = useLocalStorage('subCategories', [])
 
   useEffect(() => {
     const fetchList = async () => {
       try {
         let result = await subCategory(category)
-        console.log('results', result)
+
         setSubCategories(result.data.data.data ? result.data.data.data : [])
       } catch (err) {
         console.log(err)
@@ -21,27 +22,35 @@ const Tags = ({ category, list = 'all', setList }) => {
 
   return (
     <div className="flex flex-row md:space-x-6 space-x-2 mt-12">
-      <div
-        className={`${
-          list === 'all' ? 'bg-orange text-white' : 'text-black bg-gray-200'
-        } rounded-full md:px-10 md:py-2 px-3  cursor-pointer`}
-        onClick={() => setList('all')}>
-        All
-      </div>
+      <Link
+        href="/nft/[category]/all/[tokenId]"
+        as={`/nft/${category}/all/${tokenId}`}>
+        <a
+          className={`${
+            subCat === 'all' ? 'bg-orange text-white' : 'text-black bg-gray-200'
+          } rounded-full md:px-10 md:py-2 px-3  cursor-pointer`}>
+          {' '}
+          All
+        </a>
+      </Link>
 
       {subCategories &&
         subCategories.map((cat, i) => {
+          const catName = cat.name.toLowerCase()
           return (
-            <div
-              className={`${
-                cat.name === list
-                  ? 'bg-orange text-white'
-                  : 'text-black bg-gray-200'
-              } rounded-full md:px-10 md:py-2 px-3  cursor-pointer`}
-              key={i}
-              onClick={() => setList(cat.name)}>
-              {cat.name}
-            </div>
+            <Link
+              href="/nft/[category]/[catName]/[cat.tokenId]"
+              as={`/nft/${category}/${catName}/${cat.tokenId}`}
+              key={i}>
+              <a
+                className={`${
+                  catName === subCat
+                    ? 'bg-orange text-white'
+                    : 'text-black bg-gray-200'
+                } rounded-full md:px-10 md:py-2 px-3  cursor-pointer`}>
+                {cat.name}
+              </a>
+            </Link>
           )
         })}
     </div>
