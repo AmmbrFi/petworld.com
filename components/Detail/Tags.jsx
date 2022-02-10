@@ -10,6 +10,7 @@ const Tags = ({ category, list = 'all', setList }) => {
     const fetchList = async () => {
       try {
         let result = await subCategory(category)
+        console.log('results', result)
         setSubCategories(result.data.data.data ? result.data.data.data : [])
       } catch (err) {
         console.log(err)
@@ -33,11 +34,13 @@ const Tags = ({ category, list = 'all', setList }) => {
           return (
             <div
               className={`${
-                cat === list ? 'bg-orange text-white' : 'text-black bg-gray-200'
+                cat.name === list
+                  ? 'bg-orange text-white'
+                  : 'text-black bg-gray-200'
               } rounded-full md:px-10 md:py-2 px-3  cursor-pointer`}
               key={i}
-              onClick={() => setList(cat)}>
-              {cat}
+              onClick={() => setList(cat.name)}>
+              {cat.name}
             </div>
           )
         })}
