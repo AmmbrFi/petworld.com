@@ -34,7 +34,7 @@ const NFTDetail = ({ category, subcategory, tokenId }) => {
       <Tags {...{ subCat: subcategory, category, tokenId }} />
       <div className="px-4 my-12 text-black">
         {!isLoading ? (
-          data?.message !== 'No assets found' ? (
+          data && data?.message !== 'No assets found' ? (
             <div className="flex flex-row  items-center md:space-x-8 space-x-3">
               {data?.previousAsset === null ? (
                 <button className="bg-orange opacity-50 rounded-full md:p-4 p-1 cursor-not-allowed">
@@ -78,7 +78,7 @@ const NFTDetail = ({ category, subcategory, tokenId }) => {
                 <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 gap-0">
                   <div>
                     <img
-                      src={`/${category}.png`}
+                      src={data?.asset?.assets[0]?.path}
                       className="w-full rounded-lg"
                       alt="Animals"
                     />
@@ -88,7 +88,7 @@ const NFTDetail = ({ category, subcategory, tokenId }) => {
                       {data?.asset?.name}
                     </h1>
                     <p className="text-base text-orange mb-5">
-                      {category.toUpperCase()}
+                      {data?.asset?.category}
                     </p>
 
                     <p>{data?.asset?.description}</p>
