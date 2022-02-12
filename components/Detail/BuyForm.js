@@ -12,7 +12,7 @@ import { Button } from 'baseui/button'
 import { NotificationManager } from 'react-notifications'
 
 const BuyForm = ({ asset, saleDetails }) => {
-  const { activateBrowserWallet, account } = useEthers()
+  const { activateBrowserWallet, account, active } = useEthers()
   const [loading, setLoading] = React.useState(false)
   const { name, assetId, finalPrice } = asset
   const price = saleDetails.length > 0 ? saleDetails[1].toString() : finalPrice
@@ -25,14 +25,25 @@ const BuyForm = ({ asset, saleDetails }) => {
     setLoading(true)
     try {
       await activateBrowserWallet()
+
+      if (!account) {
+        NotificationManager.warning(
+          'You are not connected to any wallet.',
+          'Connect Wallet'
+        )
+        setLoading(false)
+        return
+      }
+
       await buyToken(assetId, price)
+
       NotificationManager.success(
         'Congratulation! successfully completed',
         name
       )
     } catch (e) {
-      NotificationManager.error('Something went wrong! try again', name)
-      console.log(e)
+      NotificationManager.error('Something went wrong. Please try again!')
+      console.log('e', e)
     }
     setLoading(false)
   }
