@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import 'react-notifications/lib/notifications.css'
 
 import { DefaultSeo } from 'next-seo'
 import Head from 'next/head'
@@ -22,6 +23,8 @@ const config = {
   }
 }
 
+import { NotificationContainer } from 'react-notifications'
+
 function MyApp({ Component, pageProps }) {
   const engine = typeof window === 'undefined' ? new Server() : new Client()
 
@@ -39,6 +42,7 @@ function MyApp({ Component, pageProps }) {
             <Component {...pageProps} />
           </BaseProvider>
         </StyletronProvider>
+        <NotificationContainer />
       </DAppProvider>
     </>
   )

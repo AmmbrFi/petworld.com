@@ -2,6 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { useRouter } from 'next/router'
+import { truncate } from '../utils'
+import { useEthers } from '@usedapp/core'
 
 const innermenu = [
   { title: 'Home', path: '/' },
@@ -14,6 +16,7 @@ const innermenu = [
 const InnerMenu = props => {
   const router = useRouter()
   const [isOpen, setIsOpen] = React.useState(false)
+  const { account } = useEthers()
 
   return (
     <nav className="container">
@@ -46,6 +49,11 @@ const InnerMenu = props => {
               </Link>
             )
           })}
+          {account && (
+            <span className="border px-3 py-1 rounded-full text-gray-600">
+              {truncate(account, 15)}
+            </span>
+          )}
         </div>
         <div className="relative md:hidden">
           <svg

@@ -6,6 +6,8 @@ import { nftList } from '../../actions'
 import BuyForm from './BuyForm'
 import { PreviousButton, NextButton } from './NavButton'
 import { formatEther } from '@ethersproject/units'
+import { Notification } from 'baseui/notification'
+import { useContract } from '../contract'
 
 const NFTDetail = ({ category, subcategory, tokenId }) => {
   const [list, setList] = React.useState('all')
@@ -13,6 +15,14 @@ const NFTDetail = ({ category, subcategory, tokenId }) => {
   const previous = data?.previousAsset ? data?.previousAsset : 'null'
   const next = data?.nextAsset ? data?.nextAsset : 'null'
   const [isLoading, setIsLoading] = useState(false)
+  const [saleDetails, setSaleDetails] = React.useState([])
+  const { getAsks } = useContract()
+
+  React.useEffect(() => {
+    getAsks(tokenId)
+      .then(res => setSaleDetails(res))
+      .catch(e => console.log(e))
+  }, [])
 
   useEffect(() => {
     const fetchList = async () => {
@@ -40,11 +50,16 @@ const NFTDetail = ({ category, subcategory, tokenId }) => {
   return (
     <div>
       <Tags {...{ subCat: subcategory, category, tokenId }} />
-      <div className="px-4 my-12 text-black">
+      <div className="my-12 text-black">
         {isLoading && <Loading />}
 
         {!isLoading && data === null && (
-          <p className="mb-64">No Assets found!</p>
+          <Notification
+            overrides={{
+              Body: { style: { width: 'auto' } }
+            }}>
+            <p>No Assets found!</p>
+          </Notification>
         )}
 
         {!isLoading && data !== null && (
@@ -84,12 +99,14 @@ const NFTDetail = ({ category, subcategory, tokenId }) => {
                   <div className="mt-10">
                     <p className="text-gray-600">Price</p>
                     <p className="text-orange text-2xl font-bold">
-                      {formatEther(data?.asset?.price)}
+                      {saleDetails.length > 0
+                        ? formatEther(saleDetails[1])
+                        : formatEther(data?.asset?.price)}
                       <span className="text-gray-600 ml-2">ETH</span>
                     </p>
                   </div>
                   <div className="mt-10">
-                    <BuyForm {...{ asset: data.asset }} />
+                    <BuyForm {...{ asset: data.asset, saleDetails }} />
                   </div>
                 </div>
               </div>
