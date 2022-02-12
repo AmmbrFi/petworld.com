@@ -41,8 +41,9 @@ const Marketplace = () => {
           <Masthead />
         </div>
         <section className="container my-20">
+          {isLoading && categories.length === 0 && <Loading />}
+
           <div className="grid md:grid-cols-3 grid-cols-2 items-center justify-center mt-6 gap-8">
-            {isLoading && categories.length === 0 && <Loading />}
             {categories &&
               categories.length > 0 &&
               categories.map((obj, i) => {

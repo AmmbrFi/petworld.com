@@ -28,8 +28,7 @@ const Tags = ({ category, subCat, tokenId }) => {
         <a
           className={`${
             subCat === 'all' ? 'bg-orange text-white' : 'text-black bg-gray-200'
-          } rounded-full md:px-10 md:py-2 px-3  cursor-pointer`}>
-          {' '}
+          } rounded-full md:px-8 md:py-2 px-3 cursor-pointer`}>
           All
         </a>
       </Link>
@@ -47,7 +46,7 @@ const Tags = ({ category, subCat, tokenId }) => {
                   catName === subCat
                     ? 'bg-orange text-white'
                     : 'text-black bg-gray-200'
-                } rounded-full md:px-10 md:py-2 px-3  cursor-pointer`}>
+                } rounded-full md:px-8 md:py-2 px-3 cursor-pointer font-medium`}>
                 {cat.name}
               </a>
             </Link>

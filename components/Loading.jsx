@@ -6,6 +6,8 @@ const Loading = props => {
       <div className="w-2 h-2 bg-orange rounded-full"></div>
       <div className="w-2 h-2 bg-orange rounded-full"></div>
       <div className="w-2 h-2 bg-orange rounded-full"></div>
+      <div className="w-2 h-2 bg-orange rounded-full"></div>
+      <div className="w-2 h-2 bg-orange rounded-full"></div>
     </div>
   )
 }
