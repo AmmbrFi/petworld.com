@@ -24,7 +24,7 @@ const InnerMenu = props => {
         <Link href="/">
           <a className="cursor-pointer">
             <Image
-              src="/pet logo.svg"
+              src="/pet-logo.svg"
               alt="logo"
               className="w-48"
               priority
