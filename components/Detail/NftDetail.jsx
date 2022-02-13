@@ -91,8 +91,12 @@ const NFTDetail = ({ category, subcategory, tokenId }) => {
                   <h1 className="text-3xl font-semibold text-black capitalize">
                     {data?.asset?.name}
                   </h1>
-                  <p className="text-base text-orange mb-5">
+                  <p className="text-base text-orange font-semibold capitalize">
                     {data?.asset?.category}
+                  </p>
+
+                  <p className="text-base text-orange mb-5 capitalize">
+                    {data?.asset?.tags}
                   </p>
 
                   <p>{data?.asset?.description}</p>
