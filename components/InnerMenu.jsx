@@ -10,6 +10,12 @@ const innermenu = [
   { title: 'Company', path: '/company' },
   { title: 'Membership', path: '/membership' },
   { title: 'NFT store', path: '/nftstore' },
+  { title: 'FAQ', path: '/faq' },
+  {
+    title: 'Whitepaper',
+    path: '/Pet_World_whitepapereng1.3.pdf',
+    target: '_blank'
+  },
   { title: 'Contact', path: '/contact' }
 ]
 
@@ -36,6 +42,17 @@ const InnerMenu = props => {
 
         <div className="hidden md:block flex flex-row items-center space-x-4 md:space-x-8 font-semibold menulinks">
           {innermenu.map((item, index) => {
+            if (item.target) {
+              return (
+                <a
+                  className={`cursor-pointer under-line text-black hover:text-orange`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={item.path}>
+                  {item.title}
+                </a>
+              )
+            }
             return (
               <Link key={index} href={item.path}>
                 <a
