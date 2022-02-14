@@ -8,7 +8,7 @@ import { Server, Client } from 'styletron-engine-atomic'
 import { Provider as StyletronProvider } from 'styletron-react'
 import { LightTheme, BaseProvider, styled } from 'baseui'
 import {
-  Rinkeby,
+  Mainnet,
   DAppProvider,
   useEtherBalance,
   useEthers,
@@ -16,10 +16,10 @@ import {
 } from '@usedapp/core'
 
 const config = {
-  readOnlyChainId: Rinkeby.chainId,
+  readOnlyChainId: Mainnet.chainId,
   readOnlyUrls: {
-    [Rinkeby.chainId]:
-      'https://rinkeby.infura.io/v3/f89f161fa7a34202930ba0ae5f52de5f'
+    [Mainnet.chainId]:
+      'https://mainnet.infura.io/v3/3c7cbb64ba0e47ddb6ba37b679f1ffa4'
   }
 }
 
