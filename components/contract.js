@@ -89,7 +89,9 @@ export const useContract = () => {
         abi,
         library.getSigner(account)
       )
-      const gas = await library.getGasPrice()
+
+      const gas = await contract.estimateGas.buyToken(tokenId, { value: price })
+
       const options = {
         value: price,
         gasPrice: gas.toString(),
