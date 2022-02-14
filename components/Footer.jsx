@@ -66,7 +66,7 @@ const Footer = props => {
 
         <div className="flex flex-row justify-between items-center p-4 md:p-10">
           <div className="flex flex-col md:flex-row items-start md:items-center space-x-0 md:space-x-6">
-            <p className="text-gray-300">Copyright Pet World 2021</p>
+            <p className="text-gray-300">Copyright Pet World 2022</p>
             <Link href="/">
               <a className="cursor-pointer text-gray-500">Privacy Policy</a>
             </Link>
