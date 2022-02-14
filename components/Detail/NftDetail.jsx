@@ -115,7 +115,7 @@ const NFTDetail = ({ category, subcategory, tokenId }) => {
                       <span className="text-gray-600 ml-2">ETH</span>
                     </p>
                   </div>
-                  <div className="flex flex-col md:flex-row md:space-x-10 space-y-10 mt-10">
+                  <div className="flex flex-col space-y-10 mt-10 md:w-2/4">
                     <BuyForm {...{ asset: data.asset, saleDetails }} />
 
                     <Button
