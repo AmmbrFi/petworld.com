@@ -74,12 +74,17 @@ const NFTDetail = ({ category, subcategory, tokenId }) => {
                 <div>
                   <img
                     src={
-                      data?.asset?.assets[0]?.path.includes(
-                        'gateway.pinata.cloud'
-                      )
+                      data?.asset?.assets[0]?.path.includes('ipfs.io')
+                        ? data?.asset?.assets[0]?.path.replace(
+                            'ipfs.io',
+                            'ammbr.mypinata.cloud'
+                          )
+                        : data?.asset?.assets[0]?.path.includes(
+                            'gateway.pinata.cloud'
+                          )
                         ? data?.asset?.assets[0]?.path.replace(
                             'gateway.pinata.cloud',
-                            'ipfs.io'
+                            'ammbr.mypinata.cloud'
                           )
                         : data?.asset?.assets[0]?.path
                     }
@@ -110,7 +115,7 @@ const NFTDetail = ({ category, subcategory, tokenId }) => {
                       <span className="text-gray-600 ml-2">ETH</span>
                     </p>
                   </div>
-                  <div className="flex space-x-10 mt-10">
+                  <div className="flex flex-col md:flex-row md:space-x-10 space-y-10 mt-10">
                     <BuyForm {...{ asset: data.asset, saleDetails }} />
 
                     <Button
