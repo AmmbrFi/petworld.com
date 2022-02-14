@@ -44,7 +44,7 @@ const Faq = () => {
                 className="border-b border-dashed text-blue-500">
                 video
               </a>
-              {' shows you how.'}
+              {' shows you how. '}
             </p>
           </div>
         </section>
