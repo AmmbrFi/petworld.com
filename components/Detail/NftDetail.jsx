@@ -79,7 +79,7 @@ const NFTDetail = ({ category, subcategory, tokenId }) => {
                       )
                         ? data?.asset?.assets[0]?.path.replace(
                             'gateway.pinata.cloud',
-                            'ipfs.io'
+                            'ammbr.mypinata.cloud'
                           )
                         : data?.asset?.assets[0]?.path
                     }
