@@ -12,6 +12,7 @@ import Partners from '../components/Home/Partners'
 import Premium from '../components/Membership/Premium'
 import Regular from '../components/Membership/Regular'
 import Whatitis from '../components/Home/Whatitis'
+import LinksInfo from '../components/LinksInfo'
 
 // <div
 //   className="bg-cover bg-center h-[687px] bg-gray-600"
@@ -51,6 +52,8 @@ export default function Home() {
           <Facilities />
           <Premium />
           <Regular />
+
+          <LinksInfo />
 
           <Cta />
 

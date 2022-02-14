@@ -9,6 +9,7 @@ import { NextSeo } from 'next-seo'
 import Opening from '../components/Opening'
 import { nftCategory } from '../actions'
 import { useLocalStorage } from '../utils'
+import LinksInfo from '../components/LinksInfo'
 
 const Marketplace = () => {
   const [categories, setCategories] = useLocalStorage('categories', [])
@@ -42,8 +43,7 @@ const Marketplace = () => {
         </div>
         <section className="container my-20">
           {isLoading && categories.length === 0 && <Loading />}
-
-          <div className="grid md:grid-cols-3 grid-cols-2 items-center justify-center mt-6 gap-8">
+          <div className="grid md:grid-cols-3 grid-cols-1 items-center justify-center mt-6 gap-8">
             {categories &&
               categories.length > 0 &&
               categories.map((obj, i) => {
@@ -63,6 +63,9 @@ const Marketplace = () => {
                   </div>
                 )
               })}
+          </div>
+          <div className="mt-20">
+            <LinksInfo />
           </div>
         </section>
       </main>
