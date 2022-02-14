@@ -32,6 +32,7 @@ const Faq = () => {
               <a
                 href="https://metamask.io"
                 target="_blank"
+                rel="noreferrer"
                 className="border-b border-dashed text-blue-500">
                 Metamask
               </a>
@@ -39,6 +40,7 @@ const Faq = () => {
               <a
                 href="https://youtu.be/uyZg0huCTYM"
                 target="_blank"
+                rel="noreferrer"
                 className="border-b border-dashed text-blue-500">
                 video
               </a>
