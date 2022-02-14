@@ -12,6 +12,7 @@ import Partners from '../components/Home/Partners'
 import Premium from '../components/Membership/Premium'
 import Regular from '../components/Membership/Regular'
 import Whatitis from '../components/Home/Whatitis'
+import LinksInfo from '../components/LinksInfo'
 
 // <div
 //   className="bg-cover bg-center h-[687px] bg-gray-600"
@@ -34,8 +35,8 @@ export default function Home() {
     <>
       <NextSeo title="Home" />
       <main>
-        <div className="relative h-screen">
-          <div className="absolute top-0 left-0 w-screen h-[800px]">
+        <div className="relative md:h-screen">
+          <div className="md:absolute top-0 left-0 w-screen h-[280px] md:h-[800px]">
             <video autoPlay loop muted>
               <source src="/landing-1.webm" type="video/webm" />
               <source src="/landing-1.mp4" type="video/mp4" />
@@ -51,6 +52,8 @@ export default function Home() {
           <Facilities />
           <Premium />
           <Regular />
+
+          <LinksInfo />
 
           <Cta />
 

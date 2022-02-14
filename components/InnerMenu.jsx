@@ -48,7 +48,8 @@ const InnerMenu = props => {
                   className={`cursor-pointer under-line text-black hover:text-orange`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  href={item.path}>
+                  href={item.path}
+                  key={index}>
                   {item.title}
                 </a>
               )

@@ -37,7 +37,8 @@ const Footer = props => {
                     className={`cursor-pointer under-line hover:text-orange`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    href={item.path}>
+                    href={item.path}
+                    key={index}>
                     {item.title}
                   </a>
                 )
