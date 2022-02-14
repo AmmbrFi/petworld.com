@@ -8,6 +8,7 @@ import { PreviousButton, NextButton } from './NavButton'
 import { formatEther } from '@ethersproject/units'
 import { Notification } from 'baseui/notification'
 import { useContract } from '../contract'
+import { Button } from 'baseui/button'
 
 const NFTDetail = ({ category, subcategory, tokenId }) => {
   const [list, setList] = React.useState('all')
@@ -109,8 +110,25 @@ const NFTDetail = ({ category, subcategory, tokenId }) => {
                       <span className="text-gray-600 ml-2">ETH</span>
                     </p>
                   </div>
-                  <div className="mt-10">
+                  <div className="flex space-x-10 mt-10">
                     <BuyForm {...{ asset: data.asset, saleDetails }} />
+
+                    <Button
+                      $as="a"
+                      href="https://www.petmacy.com.hk/pages/petpawsnft"
+                      target="_blank"
+                      kind={'secondary'}
+                      shape={'pill'}
+                      overrides={{
+                        BaseButton: {
+                          style: ({ $theme }) => ({
+                            backgroundColor: '#f08a4b',
+                            color: 'white'
+                          })
+                        }
+                      }}>
+                      Buy with Your Card
+                    </Button>
                   </div>
                 </div>
               </div>
