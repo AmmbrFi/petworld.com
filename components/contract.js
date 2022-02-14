@@ -2,6 +2,8 @@ import getConfig from 'next/config'
 import { ethers } from 'ethers'
 import { useEthers } from '@usedapp/core'
 
+import { BigNumber } from 'bignumber.js'
+
 const { publicRuntimeConfig } = getConfig()
 
 const abi = [
@@ -90,12 +92,12 @@ export const useContract = () => {
         library.getSigner(account)
       )
 
-      const gas = await contract.estimateGas.buyToken(tokenId, { value: price })
+      let gas = await contract.estimateGas.buyToken(tokenId, { value: price })
 
       const options = {
-        value: price,
-        gasPrice: gas.toString(),
-        gasLimit: 9000000
+        value: price
+        // gasPrice: gas,
+        // gasLimit: 35000000000
       }
 
       const tx = await contract.buyToken(tokenId, options)
