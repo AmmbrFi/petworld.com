@@ -65,7 +65,7 @@ const Footer = props => {
         </div>
         <div className="border-t border-gray-200 my-4" />
 
-        <div className="flex flex-row justify-between items-center p-4 md:p-10">
+        <div className="flex md:flex-row flex-col justify-between md:items-center items-start px-4 md:px-10 md:py-10 py-0">
           <div className="flex flex-col md:flex-row items-start md:items-center space-x-0 md:space-x-6">
             <p className="text-gray-300">Copyright Pet World 2022</p>
             <Link href="/">
@@ -76,7 +76,7 @@ const Footer = props => {
             </Link>
           </div>
 
-          <div className="flex flex-row items-center md:space-x-4 space-x-2">
+          <div className="flex flex-row items-center md:space-x-4 space-x-2 md:mt-0 mt-2">
             <Link href="https://www.facebook.com/Pet-Paws-NFT-103456708915004">
               <a className="cursor-pointer text-gray-500" target="_blank">
                 <img src="/Group218.png" className="h-8 w-8" />

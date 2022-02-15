@@ -18,7 +18,9 @@ const Faq = () => {
           <Menu />
 
           <section className="flex flex-col items-center justify-center w-full md:w-5/12 mx-auto text-center">
-            <h1 className="font-serif md:text-6xl text-4xl">FAQ</h1>
+            <h1 className="font-serif md:text-6xl text-4xl md:mt-0 mt-16">
+              FAQ
+            </h1>
           </section>
         </div>
 
