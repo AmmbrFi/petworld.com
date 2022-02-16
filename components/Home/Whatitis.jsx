@@ -2,24 +2,25 @@ import React from 'react'
 
 const Whatitis = props => {
   return (
-    <section className="container relative h-[500px] py-20">
+    <section className="container relative h-[500px] py-20 md:mt-0 mt-16">
       <img
         src="/Group209.svg"
         alt=""
-        className="absolute -top-20  md:top-10 md:right-[200px] right-[8px] md:w-24 w-24"
+        className="absolute -top-16  md:top-10 md:right-[200px] right-[8px] md:w-24 w-24"
       />
       <img
         src="/Group208.svg"
         alt=""
-        className="absolute md:top-10 -top-16 md:left-[200px] left-[10px] md:w-20 w-20"
+        className="absolute md:top-10 -top-12 md:left-[200px] left-[10px] md:w-20 w-20"
       />
       <img
         src="/Group210.svg"
         alt=""
         className="absolute md:bottom-10 -bottom-16 md:right-[200px] right-[8px] md:w-20 w-20"
       />
+
       <div className="flex flex-col items-center justify-center w-full md:w-full mx-auto h-full">
-        <div className="text-orange flex flex-row md:mb-2 mb-6 w-40 justify-center">
+        <div className="text-orange flex flex-row md:mb-2 mb-3 w-40 justify-center">
           <img src="/pin.svg" alt="" className="mr-1" />
           <div className="">Hong kong</div>
         </div>

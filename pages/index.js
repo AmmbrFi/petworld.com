@@ -4,6 +4,7 @@ import Cta from '../components/Home/Cta'
 import Facilities from '../components/Home/Facilities'
 import Footer from '../components/Footer'
 import Image from 'next/image'
+import LinksInfo from '../components/LinksInfo'
 import Masthead from '../components/Home/Masthead'
 import Membership from '../components/Home/Membership'
 import Menu from '../components/Menu'
@@ -12,7 +13,6 @@ import Partners from '../components/Home/Partners'
 import Premium from '../components/Membership/Premium'
 import Regular from '../components/Membership/Regular'
 import Whatitis from '../components/Home/Whatitis'
-import LinksInfo from '../components/LinksInfo'
 
 // <div
 //   className="bg-cover bg-center h-[687px] bg-gray-600"

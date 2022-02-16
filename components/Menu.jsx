@@ -96,7 +96,7 @@ const Menu = props => {
                   return (
                     <Link key={index} href={item.path}>
                       <a
-                        className={`text-gray-200 block px-4 py-3 text-2xl cursor-pointer ${
+                        className={`text-gray-200 block px-4 py-2 text-2xl cursor-pointer ${
                           router.pathname === item.path
                             ? 'text-gray-200 active'
                             : 'hover:text-gray-500'
