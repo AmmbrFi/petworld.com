@@ -8,6 +8,12 @@ const menu = [
   { title: 'Company', path: '/company' },
   { title: 'Membership', path: '/membership' },
   { title: 'NFT store', path: '/nftstore' },
+  { title: 'FAQ', path: '/faq' },
+  {
+    title: 'Whitepaper',
+    path: '/Pet_World_whitepapereng1.3.pdf',
+    target: '_blank'
+  },
   { title: 'Contact', path: '/contact' }
 ]
 
@@ -33,6 +39,18 @@ const Menu = props => {
 
         <div className="hidden md:block flex flex-row items-center space-x-4 md:space-x-8 font-semibold menulinks">
           {menu.map((item, index) => {
+            if (item.target) {
+              return (
+                <a
+                  className={`cursor-pointer under-line hover:text-orange`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={item.path}>
+                  {item.title}
+                </a>
+              )
+            }
+
             return (
               <Link key={index} href={item.path}>
                 <a
@@ -78,7 +96,7 @@ const Menu = props => {
                   return (
                     <Link key={index} href={item.path}>
                       <a
-                        className={`text-gray-200 block px-4 py-3 text-2xl cursor-pointer ${
+                        className={`text-gray-200 block px-4 py-2 text-2xl cursor-pointer ${
                           router.pathname === item.path
                             ? 'text-gray-200 active'
                             : 'hover:text-gray-500'

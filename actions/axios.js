@@ -8,7 +8,8 @@ const instance = () => {
     baseURL: publicRuntimeConfig.backendUrl,
 
     headers: {
-      'Content-type': 'application/json'
+      'Content-type': 'application/json',
+      'x-api-key': publicRuntimeConfig.apiKey
     }
   })
 

@@ -26,7 +26,7 @@
     @apply bg-cover bg-no-repeat bg-center;
   }
   section {
-    @apply my-24;
+    @apply my-10 md:my-24;
   }
   .bg-img {
     width: 100%;

@@ -6,6 +6,12 @@ const menu = [
   { title: 'Company', path: '/company' },
   { title: 'Membership', path: '/membership' },
   { title: 'NFT store', path: '/nftstore' },
+  { title: 'FAQ', path: '/faq' },
+  {
+    title: 'Whitepaper',
+    path: '/Pet_World_whitepapereng1.3.pdf',
+    target: '_blank'
+  },
   { title: 'Contact', path: '/contact' }
 ]
 
@@ -25,6 +31,19 @@ const Footer = props => {
           </Link>
           <div className="hidden md:block flex flex-row items-center space-x-4 md:space-x-8">
             {menu.map((item, index) => {
+              if (item.target) {
+                return (
+                  <a
+                    className={`cursor-pointer under-line hover:text-orange`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={item.path}
+                    key={index}>
+                    {item.title}
+                  </a>
+                )
+              }
+
               return (
                 <Link key={index} href={item.path}>
                   <a
@@ -46,9 +65,9 @@ const Footer = props => {
         </div>
         <div className="border-t border-gray-200 my-4" />
 
-        <div className="flex flex-row justify-between items-center p-4 md:p-10">
+        <div className="flex md:flex-row flex-col justify-between md:items-center items-start px-4 md:px-10 md:py-10 py-0">
           <div className="flex flex-col md:flex-row items-start md:items-center space-x-0 md:space-x-6">
-            <p className="text-gray-300">Copyright Pet World 2021</p>
+            <p className="text-gray-300">Copyright Pet World 2022</p>
             <Link href="/">
               <a className="cursor-pointer text-gray-500">Privacy Policy</a>
             </Link>
@@ -57,7 +76,7 @@ const Footer = props => {
             </Link>
           </div>
 
-          <div className="flex flex-row items-center md:space-x-4 space-x-2">
+          <div className="flex flex-row items-center md:space-x-4 space-x-2 md:mt-0 mt-2">
             <Link href="https://www.facebook.com/Pet-Paws-NFT-103456708915004">
               <a className="cursor-pointer text-gray-500" target="_blank">
                 <img src="/Group218.png" className="h-8 w-8" />
