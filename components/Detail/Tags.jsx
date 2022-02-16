@@ -21,14 +21,14 @@ const Tags = ({ category, subCat, tokenId }) => {
   }, [category])
 
   return (
-    <div className="flex flex-row flex-wrap md:space-x-6 space-x-3 space-y-2 md:space-y-0 mt-12">
+    <div className="grid md:grid-cols-10 grid-cols-3 md:gap-x-6 gap-x-3 md:gap-y-3 gap-y-3  mt-12">
       <Link
         href="/nft/[category]/all/[tokenId]"
         as={`/nft/${category}/all/${tokenId}`}>
         <a
           className={`${
             subCat === 'all' ? 'bg-orange text-white' : 'text-black bg-gray-200'
-          } rounded-full md:px-8 md:py-2 py-1 px-3 cursor-pointer font-medium`}>
+          } rounded-full md:py-3 py-2  text-center cursor-pointer font-medium`}>
           {' '}
           All
         </a>
@@ -47,7 +47,7 @@ const Tags = ({ category, subCat, tokenId }) => {
                   catName === subCat
                     ? 'bg-orange text-white'
                     : 'text-black bg-gray-200'
-                } rounded-full md:px-8 md:py-2 px-3 cursor-pointer font-medium`}>
+                } rounded-full md:py-3 py-2  text-center cursor-pointer font-medium`}>
                 {cat.name}
               </a>
             </Link>

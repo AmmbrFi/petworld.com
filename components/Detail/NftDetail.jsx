@@ -1,14 +1,14 @@
+import { NextButton, PreviousButton } from './NavButton'
 import React, { useEffect, useState } from 'react'
 
-import Loading from '../Loading'
-import Tags from './Tags'
-import { nftList } from '../../actions'
-import BuyForm from './BuyForm'
-import { PreviousButton, NextButton } from './NavButton'
-import { formatEther } from '@ethersproject/units'
-import { Notification } from 'baseui/notification'
-import { useContract } from '../contract'
 import { Button } from 'baseui/button'
+import BuyForm from './BuyForm'
+import Loading from '../Loading'
+import { Notification } from 'baseui/notification'
+import Tags from './Tags'
+import { formatEther } from '@ethersproject/units'
+import { nftList } from '../../actions'
+import { useContract } from '../contract'
 
 const NFTDetail = ({ category, subcategory, tokenId }) => {
   const [list, setList] = React.useState('all')
@@ -64,12 +64,12 @@ const NFTDetail = ({ category, subcategory, tokenId }) => {
         )}
 
         {!isLoading && data !== null && (
-          <div className="flex flex-row  items-center md:space-x-8 space-x-3">
+          <div className="flex flex-row  items-center md:space-x-8 space-x-2">
             <PreviousButton
               {...{ asset: data?.previousAsset, subcategory, category }}
             />
 
-            <div className="bg-white md:py-16 md:px-10 p-2 rounded-lg w-10/12">
+            <div className="bg-white md:py-16 md:px-10 px-2 py-2 rounded-lg w-10/12">
               <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 gap-0">
                 <div>
                   <img

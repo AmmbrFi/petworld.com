@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { useRouter } from 'next/router'
 import { truncate } from '../utils'
 import { useEthers } from '@usedapp/core'
+import { useRouter } from 'next/router'
 
 const innermenu = [
   { title: 'Home', path: '/' },
@@ -75,7 +75,7 @@ const InnerMenu = props => {
         </div>
         <div className="relative md:hidden">
           <svg
-            fill="currentColor"
+            fill="orange"
             viewBox="0 0 20 20"
             className="w-10 h-10 cursor-pointer m-2"
             onClick={() => setIsOpen(!isOpen)}>
@@ -104,7 +104,7 @@ const InnerMenu = props => {
                   return (
                     <Link key={index} href={item.path}>
                       <a
-                        className={`text-gray-200 block px-4 py-3 text-2xl cursor-pointer ${
+                        className={`text-gray-200 block px-4 py-2 text-2xl cursor-pointer ${
                           router.pathname === item.path
                             ? 'text-gray-200 active'
                             : 'hover:text-gray-500'
