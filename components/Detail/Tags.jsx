@@ -31,7 +31,7 @@ const Tags = ({ category, subCat, tokenId }) => {
               subCat === 'all'
                 ? 'bg-orange text-white'
                 : 'text-black bg-gray-200'
-            } rounded-full md:py-3 py-3 md:px-10 px-8  text-center cursor-pointer font-medium`}>
+            } rounded-full md:w-28 md:h-12 w-24 h-12 pt-3 text-center cursor-pointer font-medium`}>
             {' '}
             All
           </a>
@@ -50,7 +50,7 @@ const Tags = ({ category, subCat, tokenId }) => {
                     catName === subCat
                       ? 'bg-orange text-white'
                       : 'text-black bg-gray-200'
-                  } rounded-full md:py-3 py-3 md:px-10 px-8  text-center cursor-pointer font-medium`}>
+                  } rounded-full md:w-28 md:h-12 w-24 h-12 pt-3  text-center cursor-pointer font-medium`}>
                   {cat.name}
                 </a>
               </Link>
