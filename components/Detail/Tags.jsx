@@ -21,38 +21,42 @@ const Tags = ({ category, subCat, tokenId }) => {
   }, [category])
 
   return (
-    <div className="grid md:grid-cols-10 grid-cols-3 md:gap-x-6 gap-x-3 md:gap-y-3 gap-y-3  mt-12">
-      <Link
-        href="/nft/[category]/all/[tokenId]"
-        as={`/nft/${category}/all/${tokenId}`}>
-        <a
-          className={`${
-            subCat === 'all' ? 'bg-orange text-white' : 'text-black bg-gray-200'
-          } rounded-full md:py-3 py-2  text-center cursor-pointer font-medium`}>
-          {' '}
-          All
-        </a>
-      </Link>
+    <div className="flex overflow-x-scroll hscroll hide-scroll-bar md:mt-8 mt-0">
+      <div className="flex flex-nowrap space-x-3 py-3">
+        <Link
+          href="/nft/[category]/all/[tokenId]"
+          as={`/nft/${category}/all/${tokenId}`}>
+          <a
+            className={`${
+              subCat === 'all'
+                ? 'bg-orange text-white'
+                : 'text-black bg-gray-200'
+            } rounded-full md:py-3 py-3 md:px-10 px-8  text-center cursor-pointer font-medium`}>
+            {' '}
+            All
+          </a>
+        </Link>
 
-      {subCategories &&
-        subCategories.map((cat, i) => {
-          const catName = cat.name.toLowerCase()
-          return (
-            <Link
-              href="/nft/[category]/[catName]/[cat.tokenId]"
-              as={`/nft/${category}/${catName}/${cat.tokenId}`}
-              key={i}>
-              <a
-                className={`${
-                  catName === subCat
-                    ? 'bg-orange text-white'
-                    : 'text-black bg-gray-200'
-                } rounded-full md:py-3 py-2  text-center cursor-pointer font-medium`}>
-                {cat.name}
-              </a>
-            </Link>
-          )
-        })}
+        {subCategories &&
+          subCategories.map((cat, i) => {
+            const catName = cat.name.toLowerCase()
+            return (
+              <Link
+                href="/nft/[category]/[catName]/[cat.tokenId]"
+                as={`/nft/${category}/${catName}/${cat.tokenId}`}
+                key={i}>
+                <a
+                  className={`${
+                    catName === subCat
+                      ? 'bg-orange text-white'
+                      : 'text-black bg-gray-200'
+                  } rounded-full md:py-3 py-3 md:px-10 px-8  text-center cursor-pointer font-medium`}>
+                  {cat.name}
+                </a>
+              </Link>
+            )
+          })}
+      </div>
     </div>
   )
 }

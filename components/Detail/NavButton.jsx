@@ -1,10 +1,10 @@
-import React from 'react'
 import Link from 'next/link'
+import React from 'react'
 
 export const PreviousButton = ({ asset, category, subcategory }) => {
   if (asset === null) {
     return (
-      <div className="opacity-50 cursor-not-allowed bg-orange rounded-full md:p-4 p-1">
+      <div className="opacity-50 cursor-not-allowed bg-orange rounded-full md:p-4 p-3">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6"
@@ -28,7 +28,7 @@ export const PreviousButton = ({ asset, category, subcategory }) => {
       <a
         className={`${
           asset === null ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'
-        } bg-orange rounded-full md:p-4 p-1`}>
+        } bg-orange rounded-full md:p-4 p-3`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6"
@@ -50,7 +50,7 @@ export const PreviousButton = ({ asset, category, subcategory }) => {
 export const NextButton = ({ asset, category, subcategory }) => {
   if (asset === null) {
     return (
-      <div className="opacity-50 cursor-not-allowed bg-orange rounded-full md:p-4 p-1">
+      <div className="opacity-50 cursor-not-allowed bg-orange rounded-full md:p-4 p-3">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6"
@@ -74,7 +74,7 @@ export const NextButton = ({ asset, category, subcategory }) => {
       <a
         className={`${
           asset === null ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'
-        } bg-orange rounded-full md:p-4 p-1`}>
+        } bg-orange rounded-full md:p-4 p-3`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6"
