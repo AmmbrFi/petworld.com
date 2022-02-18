@@ -42,6 +42,7 @@ const Menu = props => {
             if (item.target) {
               return (
                 <a
+                  key={index}
                   className={`cursor-pointer under-line hover:text-orange`}
                   target="_blank"
                   rel="noopener noreferrer"
