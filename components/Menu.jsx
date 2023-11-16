@@ -9,11 +9,11 @@ const menu = [
   { title: 'Membership', path: '/membership' },
   { title: 'NFT store', path: '/nftstore' },
   { title: 'FAQ', path: '/faq' },
-  {
-    title: 'Whitepaper',
-    path: '/Pet_World_whitepapereng1.3.pdf',
-    target: '_blank'
-  },
+  // {
+  //   title: 'Whitepaper',
+  //   path: '/Pet_World_whitepapereng1.3.pdf',
+  //   target: '_blank'
+  // },
   { title: 'Contact', path: '/contact' }
 ]
 
@@ -42,6 +42,7 @@ const Menu = props => {
             if (item.target) {
               return (
                 <a
+                  key={index}
                   className={`cursor-pointer under-line hover:text-orange`}
                   target="_blank"
                   rel="noopener noreferrer"
