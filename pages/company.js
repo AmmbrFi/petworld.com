@@ -5,7 +5,7 @@ import Menu from '../components/Menu'
 import { NextSeo } from 'next-seo'
 import SectionOne from '../components/Company/SectionOne'
 import SectionTwo from '../components/Company/SectionTwo'
-import Team from '../components/Company/Team'
+// import Team from '../components/Company/Team'
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
           <Masthead />
         </div>
         <SectionOne />
-        <Team />
+        {/* <Team /> */}
       </main>
       <Footer />
     </>
