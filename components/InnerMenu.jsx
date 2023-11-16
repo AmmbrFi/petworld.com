@@ -11,11 +11,11 @@ const innermenu = [
   { title: 'Membership', path: '/membership' },
   { title: 'NFT store', path: '/nftstore' },
   { title: 'FAQ', path: '/faq' },
-  {
-    title: 'Whitepaper',
-    path: '/Pet_World_whitepapereng1.3.pdf',
-    target: '_blank'
-  },
+  // {
+  //   title: 'Whitepaper',
+  //   path: '/Pet_World_whitepapereng1.3.pdf',
+  //   target: '_blank'
+  // },
   { title: 'Contact', path: '/contact' }
 ]
 
@@ -49,8 +49,7 @@ const InnerMenu = props => {
                   className={`cursor-pointer under-line text-black hover:text-orange`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  href={item.path}
-                  key={index}>
+                  href={item.path}>
                   {item.title}
                 </a>
               )
